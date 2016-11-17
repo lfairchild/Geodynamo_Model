@@ -1,0 +1,1862 @@
+Last login: Wed Oct 26 09:39:05 on ttys000
+
+lukefairchild765@Lukes-MacBook-Pro : ~
+$ ssh lfairchild@baribu.geo.berkeley.edu
+lfairchild@baribu.geo.berkeley.edu's password: 
+Last login: Wed Oct 26 09:43:28 2016 from airbears2-10-142-123-47.airbears2.1918.berkeley.edu
+Rocks 6.1.1 (Sand Boa)
+Profile built 05:00 21-Feb-2015
+
+Kickstarted 21:38 20-Feb-2015
+[lfairchild@baribu ~]$ ls
+calypso
+[lfairchild@baribu ~]$ pwd
+/home/lfairchild
+[lfairchild@baribu ~]$ cd calypso
+[lfairchild@baribu calypso]$ ls
+aclocal.m4      config.status  doxygen                LICENSE                src
+bin             config.sub     examples               Makefile               tests
+CMakeLists.txt  configure      insert_code_header.py  Makefile.in            work
+config.guess    configure.in   INSTALL                module_dependency.mod
+config.log      doc            install-sh             README
+[lfairchild@baribu calypso]$ mkdir project
+[lfairchild@baribu calypso]$ cd project
+[lfairchild@baribu project]$ ls
+[lfairchild@baribu project]$ cp /home/bbuffett/calypso-1.1.2-p1/projects/stratification/source3/rst_64/rst.500.* .
+[lfairchild@baribu project]$ ls
+rst.500.0.fst   rst.500.21.fst  rst.500.33.fst  rst.500.45.fst  rst.500.57.fst
+rst.500.10.fst  rst.500.22.fst  rst.500.34.fst  rst.500.46.fst  rst.500.58.fst
+rst.500.11.fst  rst.500.23.fst  rst.500.35.fst  rst.500.47.fst  rst.500.59.fst
+rst.500.12.fst  rst.500.24.fst  rst.500.36.fst  rst.500.48.fst  rst.500.5.fst
+rst.500.13.fst  rst.500.25.fst  rst.500.37.fst  rst.500.49.fst  rst.500.60.fst
+rst.500.14.fst  rst.500.26.fst  rst.500.38.fst  rst.500.4.fst   rst.500.61.fst
+rst.500.15.fst  rst.500.27.fst  rst.500.39.fst  rst.500.50.fst  rst.500.62.fst
+rst.500.16.fst  rst.500.28.fst  rst.500.3.fst   rst.500.51.fst  rst.500.63.fst
+rst.500.17.fst  rst.500.29.fst  rst.500.40.fst  rst.500.52.fst  rst.500.6.fst
+rst.500.18.fst  rst.500.2.fst   rst.500.41.fst  rst.500.53.fst  rst.500.7.fst
+rst.500.19.fst  rst.500.30.fst  rst.500.42.fst  rst.500.54.fst  rst.500.8.fst
+rst.500.1.fst   rst.500.31.fst  rst.500.43.fst  rst.500.55.fst  rst.500.9.fst
+rst.500.20.fst  rst.500.32.fst  rst.500.44.fst  rst.500.56.fst
+[lfairchild@baribu project]$ mkdir rst_64
+[lfairchild@baribu project]$ mv rst.* ./rst_64/.
+[lfairchild@baribu project]$ ls
+rst_64
+[lfairchild@baribu project]$ cd rst_64
+[lfairchild@baribu rst_64]$ ls
+rst.500.0.fst   rst.500.21.fst  rst.500.33.fst  rst.500.45.fst  rst.500.57.fst
+rst.500.10.fst  rst.500.22.fst  rst.500.34.fst  rst.500.46.fst  rst.500.58.fst
+rst.500.11.fst  rst.500.23.fst  rst.500.35.fst  rst.500.47.fst  rst.500.59.fst
+rst.500.12.fst  rst.500.24.fst  rst.500.36.fst  rst.500.48.fst  rst.500.5.fst
+rst.500.13.fst  rst.500.25.fst  rst.500.37.fst  rst.500.49.fst  rst.500.60.fst
+rst.500.14.fst  rst.500.26.fst  rst.500.38.fst  rst.500.4.fst   rst.500.61.fst
+rst.500.15.fst  rst.500.27.fst  rst.500.39.fst  rst.500.50.fst  rst.500.62.fst
+rst.500.16.fst  rst.500.28.fst  rst.500.3.fst   rst.500.51.fst  rst.500.63.fst
+rst.500.17.fst  rst.500.29.fst  rst.500.40.fst  rst.500.52.fst  rst.500.6.fst
+rst.500.18.fst  rst.500.2.fst   rst.500.41.fst  rst.500.53.fst  rst.500.7.fst
+rst.500.19.fst  rst.500.30.fst  rst.500.42.fst  rst.500.54.fst  rst.500.8.fst
+rst.500.1.fst   rst.500.31.fst  rst.500.43.fst  rst.500.55.fst  rst.500.9.fst
+rst.500.20.fst  rst.500.32.fst  rst.500.44.fst  rst.500.56.fst
+[lfairchild@baribu rst_64]$ cd ..
+[lfairchild@baribu project]$ mkdir sph_lm95t144r96c_64
+[lfairchild@baribu project]$ cp /home/bbuffett/calypso-1.1.2-p1/projects/stratification/source3/sph_lm95t144r96c_64 ./sph_lm95t144r96c_64/.
+cp: omitting directory `/home/bbuffett/calypso-1.1.2-p1/projects/stratification/source3/sph_lm95t144r96c_64'
+[lfairchild@baribu project]$ ls
+rst_64  sph_lm95t144r96c_64
+[lfairchild@baribu project]$ cd sph_lm95t144r96c_64
+[lfairchild@baribu sph_lm95t144r96c_64]$ ls
+[lfairchild@baribu sph_lm95t144r96c_64]$ ls
+[lfairchild@baribu sph_lm95t144r96c_64]$ ls -l
+total 0
+[lfairchild@baribu sph_lm95t144r96c_64]$ pwd
+/home/lfairchild/calypso/project/sph_lm95t144r96c_64
+[lfairchild@baribu sph_lm95t144r96c_64]$ ls -l
+total 0
+[lfairchild@baribu sph_lm95t144r96c_64]$ cp /home/bbuffett/calypso-1.1.2-p1/projects/stratification/source3/sph_lm95t144r96c_64/* ./sph_lm95t144r96c_64/.
+cp: target `./sph_lm95t144r96c_64/.' is not a directory
+[lfairchild@baribu sph_lm95t144r96c_64]$ cd ..
+[lfairchild@baribu project]$ cp /home/bbuffett/calypso-1.1.2-p1/projects/stratification/source3/sph_lm95t144r96c_64/* ./sph_lm95t144r96c_64/.
+[lfairchild@baribu project]$ pwd
+/home/lfairchild/calypso/project
+[lfairchild@baribu project]$ ls
+rst_64  sph_lm95t144r96c_64
+[lfairchild@baribu project]$ cp /home/bbuffett/calypso-1.1.2-p1/projects/stratification/source3/control_MHD .
+[lfairchild@baribu project]$ cp /home/bbuffett/calypso-1.1.2-p1/projects/stratification/source3/calypso-batch.sh .
+[lfairchild@baribu project]$ ls
+calypso-batch.sh  control_MHD  rst_64  sph_lm95t144r96c_64
+[lfairchild@baribu project]$ mkdir field
+[lfairchild@baribu project]$ ls
+calypso-batch.sh  control_MHD  field  rst_64  sph_lm95t144r96c_64
+[lfairchild@baribu project]$ vi calypso-batch.sh
+[lfairchild@baribu project]$ more calypso-batch.sh
+#!/bin/bash
+#
+# name of this script: calypso-batch.sh
+#
+# Job name:
+#SBATCH --job-name=mhd
+#
+# Partition:
+#SBATCH --partition=GCL
+#
+# Processors:
+#SBATCH --ntasks=64
+#
+# Mail type:
+#SBATCH --mail-type=all
+#
+# Mail user:
+#SBATCH --mail-user=lfairchild@berkeley.edu
+#
+#export OMP_NUM_THREADS=1
+mpirun /home/lfairchild/calypso/bin/sph_mhd 
+[lfairchild@baribu project]$ ls
+calypso-batch.sh  control_MHD  field  rst_64  sph_lm95t144r96c_64
+[lfairchild@baribu project]$ vi control_MHD
+[lfairchild@baribu project]$ sbatch calypso-batch.sh
+Submitted batch job 3587
+[lfairchild@baribu project]$ qstat
+Job ID              Jobname          Username        Time     S Queue          
+3549                solver           liwei           16:14:24 R GCL            
+3578                AXIsem           dafrost         04:19:22 R GCL            
+3585                solver           liwei           00:00:06 R GCL            
+3586                mhd              bbuffett        00:00:00 C GCL            
+3587                mhd              lfairchild      00:00:00 R GCL            
+[lfairchild@baribu project]$ ls
+calypso-batch.sh  control_MHD  field  rst_64  slurm-3587.out  sph_lm95t144r96c_64
+[lfairchild@baribu project]$ ls
+calypso-batch.sh  control_MHD  field  rst_64  slurm-3587.out  sph_lm95t144r96c_64
+[lfairchild@baribu project]$ more slurm-3587.out
+ Simulation start: PE.            3
+ Simulation start: PE.            4
+ Simulation start: PE.            5
+ Simulation start: PE.            6
+ Simulation start: PE.            7
+ Simulation start: PE.            0
+ Simulation start: PE.            1
+ Simulation start: PE.            2
+ Simulation start: PE.           30
+ Simulation start: PE.           31
+ Simulation start: PE.           34
+ Simulation start: PE.           24
+ Simulation start: PE.           35
+ Simulation start: PE.           25
+ Simulation start: PE.           36
+ Simulation start: PE.           26
+ Simulation start: PE.           50
+ Simulation start: PE.           37
+ Simulation start: PE.           27
+ Simulation start: PE.           51
+ Simulation start: PE.           38
+ Simulation start: PE.           28
+ Simulation start: PE.           52
+ Simulation start: PE.           32
+ Simulation start: PE.           29
+ Simulation start: PE.           61
+ Simulation start: PE.           53
+ Simulation start: PE.           33
+ Simulation start: PE.           54
+ Simulation start: PE.           39
+ Simulation start: PE.           62
+ Simulation start: PE.           55
+ Simulation start: PE.           63
+ Simulation start: PE.           48
+ Simulation start: PE.           20
+ Simulation start: PE.           56
+ Simulation start: PE.           49
+ Simulation start: PE.           21
+ Simulation start: PE.           57
+ Simulation start: PE.           22
+ Simulation start: PE.           58
+ Simulation start: PE.           23
+ Simulation start: PE.           59
+ Simulation start: PE.           42
+ Simulation start: PE.           16
+ Simulation start: PE.           60
+ Simulation start: PE.           43
+ Simulation start: PE.           17
+ Simulation start: PE.           44
+ Simulation start: PE.           18
+ Simulation start: PE.           45
+ Simulation start: PE.           19
+ Simulation start: PE.           46
+ Simulation start: PE.           47
+ Simulation start: PE.           40
+ Simulation start: PE.           41
+ Read ascii grid file: sph_lm95t144r96c_64/in.0.rtp
+ Simulation start: PE.           15
+ Simulation start: PE.            8
+ Simulation start: PE.            9
+ Simulation start: PE.           10
+ Simulation start: PE.           11
+ Simulation start: PE.           12
+ Simulation start: PE.           13
+ Simulation start: PE.           14
+ Read ascii spectr modes file: sph_lm95t144r96c_64/in.0.rj
+ Read ascii grid file: sph_lm95t144r96c_64/in.0.rtm
+ Read ascii spectr modes file: sph_lm95t144r96c_64/in.0.rlm
+ Read ascii mesh file: sph_lm95t144r96c_64/in.0.gfm
+ Number of  element for           63 :        62208       62208
+ Number of  element for           56 :        62208       62208
+ Number of  element for           57 :        65664       65664
+ Number of  element for           58 :        65664       65664
+ Number of  element for           62 :        65664       65664
+ Number of  element for           59 :        65664       65664
+ Number of  element for           61 :        65664       65664
+ Number of  element for           60 :        65664       65664
+ Number of  element for           47 :        67392       67392
+ Number of  element for           39 :        67392       67392
+ Number of  element for           31 :        67392       67392
+ Number of  element for           55 :        67392       67392
+ Number of  element for            7 :        67392       67392
+ Number of  element for           15 :        67392       67392
+ Number of  element for           23 :        67392       67392
+ Number of  element for           48 :        67392       67392
+ Number of  element for           40 :        67392       67392
+ Number of  element for           32 :        67392       67392
+ Number of  element for           41 :        71136       71136
+ Number of  element for           46 :        71136       71136
+ Number of  element for           38 :        71136       71136
+ Number of  element for           33 :        71136       71136
+ Number of  element for            8 :        67392       67392
+ Number of  element for           24 :        67392       67392
+ Number of  element for           25 :        71136       71136
+ Number of  element for           30 :        71136       71136
+ Number of  element for           54 :        71136       71136
+ Number of  element for           49 :        71136       71136
+ Number of  element for           16 :        67392       67392
+ Number of  element for           17 :        71136       71136
+ Number of  element for           34 :        71136       71136
+ Number of  element for           26 :        71136       71136
+ Number of  element for           27 :        71136       71136
+ Number of  element for           50 :        71136       71136
+ Number of  element for           42 :        71136       71136
+ Number of  element for           28 :        71136       71136
+ Number of  element for           29 :        71136       71136
+ Number of  element for           35 :        71136       71136
+ Number of  element for           51 :        71136       71136
+ Number of  element for           43 :        71136       71136
+ Number of  element for           44 :        71136       71136
+ Number of  element for           14 :        71136       71136
+ Number of  element for            9 :        71136       71136
+ Number of  element for           10 :        71136       71136
+ Number of  element for           18 :        71136       71136
+ Number of  element for           22 :        71136       71136
+ Number of  element for            0 :        67392       67392
+ Number of  element for            6 :        71136       71136
+ Number of  element for           53 :        71136       71136
+ Number of  element for            1 :        71136       71136
+ Number of  element for           45 :        71136       71136
+ Number of  element for           36 :        71136       71136
+ Number of  element for            2 :        71136       71136
+ Number of  element for           11 :        71136       71136
+ Number of  element for           13 :        71136       71136
+ Number of  element for           20 :        71136       71136
+ Number of  element for           21 :        71136       71136
+ Number of  element for           19 :        71136       71136
+ Number of  element for           37 :        71136       71136
+ Number of  element for           12 :        71136       71136
+ Number of  element for            3 :        71136       71136
+ Number of  element for            4 :        71136       71136
+ Number of  element for           52 :        71136       71136
+ Number of  element for            5 :        71136       71136
+ Number of  surface for           63 :       195264      195264
+ Number of  surface for           56 :       195264      195264
+ Number of  surface for           62 :       205920      205920
+ Number of  surface for           57 :       205920      205920
+ Number of  surface for           59 :       205920      205920
+ Number of  surface for           61 :       205920      205920
+ Number of  surface for           58 :       205920      205920
+ Number of  surface for           60 :       205920      205920
+ Number of  surface for            7 :       211104      211104
+ Number of  surface for            0 :       211104      211104
+ Number of  surface for           23 :       211104      211104
+ Number of  surface for            6 :       222624      222624
+ Number of  surface for           55 :       211104      211104
+ Number of  surface for            1 :       222624      222624
+ Number of  surface for           39 :       211104      211104
+ Number of  surface for           31 :       211104      211104
+ Number of  surface for           15 :       211104      211104
+ Number of  surface for            2 :       222624      222624
+ Number of  surface for            3 :       222624      222624
+ Number of  surface for            4 :       222624      222624
+ Number of  surface for           47 :       211104      211104
+ Number of  surface for            5 :       222624      222624
+ Number of  surface for           24 :       211104      211104
+ Number of  surface for           48 :       211104      211104
+ Number of  surface for           32 :       211104      211104
+ Number of  surface for           16 :       211104      211104
+ Number of  surface for            8 :       211104      211104
+ Number of  surface for           14 :       222624      222624
+ Number of  surface for           40 :       211104      211104
+ Number of  surface for           22 :       222624      222624
+ Number of  surface for            9 :       222624      222624
+ Number of  surface for           30 :       222624      222624
+ Number of  surface for           54 :       222624      222624
+ Number of  surface for           38 :       222624      222624
+ Number of  surface for           33 :       222624      222624
+ Number of  surface for           46 :       222624      222624
+ Number of  surface for           25 :       222624      222624
+ Number of  surface for           17 :       222624      222624
+ Number of  surface for           49 :       222624      222624
+ Number of  surface for           20 :       222624      222624
+ Number of  surface for           41 :       222624      222624
+ Number of  surface for           50 :       222624      222624
+ Number of  surface for           51 :       222624      222624
+ Number of  surface for           35 :       222624      222624
+ Number of  surface for           10 :       222624      222624
+ Number of  surface for           12 :       222624      222624
+ Number of  surface for           21 :       222624      222624
+ Number of  surface for           18 :       222624      222624
+ Number of  surface for           19 :       222624      222624
+ Number of  surface for           42 :       222624      222624
+ Number of  surface for           36 :       222624      222624
+ Number of  surface for           43 :       222624      222624
+ Number of  surface for           44 :       222624      222624
+ Number of  surface for           29 :       222624      222624
+ Number of  surface for           26 :       222624      222624
+ Number of  surface for           13 :       222624      222624
+ Number of  surface for           27 :       222624      222624
+ Number of  surface for           11 :       222624      222624
+ Number of  surface for           28 :       222624      222624
+ Number of  surface for           52 :       222624      222624
+ Number of  surface for           53 :       222624      222624
+ Number of  surface for           34 :       222624      222624
+ Number of  surface for           37 :       222624      222624
+ Number of  surface for           45 :       222624      222624
+ Number of  edge for           63 :       204192      204192
+ Number of  edge for           56 :       204192      204192
+ Number of  edge for           62 :       215136      215136
+ Number of  edge for           61 :       215136      215136
+ Number of  edge for           59 :       215136      215136
+ Number of  edge for           57 :       215136      215136
+ Number of  edge for            7 :       220320      220320
+ Number of  edge for           58 :       215136      215136
+ Number of  edge for           60 :       215136      215136
+ Number of  edge for            0 :       220320      220320
+ Number of  edge for            6 :       232128      232128
+ Number of  edge for            2 :       232128      232128
+ Number of  edge for            1 :       232128      232128
+ Number of  edge for            3 :       232128      232128
+ Number of  edge for            4 :       232128      232128
+ Number of  edge for            5 :       232128      232128
+ Number of  edge for           55 :       220320      220320
+ Number of  edge for           23 :       220320      220320
+ Number of  edge for           15 :       220320      220320
+ Number of  edge for           39 :       220320      220320
+ Number of  edge for           31 :       220320      220320
+ Number of  edge for           47 :       220320      220320
+ Number of  edge for            8 :       220320      220320
+ Number of  edge for           32 :       220320      220320
+ Number of  edge for           24 :       220320      220320
+ Number of  edge for           48 :       220320      220320
+ Number of  edge for           16 :       220320      220320
+ Number of  edge for           40 :       220320      220320
+ Number of  edge for           46 :       232128      232128
+ Number of  edge for           30 :       232128      232128
+ Number of  edge for           14 :       232128      232128
+ Number of  edge for           54 :       232128      232128
+ Number of  edge for           38 :       232128      232128
+ Number of  edge for           22 :       232128      232128
+ Number of  edge for           10 :       232128      232128
+ Number of  edge for            9 :       232128      232128
+ Number of  edge for           53 :       232128      232128
+ Number of  edge for           52 :       232128      232128
+ Number of  edge for           37 :       232128      232128
+ Number of  edge for           20 :       232128      232128
+ Number of  edge for           17 :       232128      232128
+ Number of  edge for           18 :       232128      232128
+ Number of  edge for           27 :       232128      232128
+ Number of  edge for           25 :       232128      232128
+ Number of  edge for           19 :       232128      232128
+ Number of  edge for           34 :       232128      232128
+ Number of  edge for           33 :       232128      232128
+ Number of  edge for           12 :       232128      232128
+ Number of  edge for           41 :       232128      232128
+ Number of  edge for           51 :       232128      232128
+ Number of  edge for           49 :       232128      232128
+ Number of  edge for           50 :       232128      232128
+ Number of  edge for           28 :       232128      232128
+ Number of  edge for           42 :       232128      232128
+ Number of  edge for           29 :       232128      232128
+ Number of  edge for           43 :       232128      232128
+ Number of  edge for           26 :       232128      232128
+ Number of  edge for           13 :       232128      232128
+ Number of  edge for           21 :       232128      232128
+ Number of  edge for           35 :       232128      232128
+ Number of  edge for           11 :       232128      232128
+ Number of  edge for           45 :       232128      232128
+ Number of  edge for           44 :       232128      232128
+ Number of  edge for           36 :       232128      232128
+ 
+ coefficient for velocity:               1.00000000000000     
+ coefficient for pressure:               20000.0000000000     
+ coefficient for viscous diffusion:      1.00000000000000     
+ coefficient for buoyancy:               15600000.0000000     
+ coefficient for coriolis force:         40000.0000000000     
+ coefficient for Lorentz force:          40000.0000000000     
+ coefficient for temperature:            1.00000000000000     
+ coefficient for thermal diffusion:      1.00000000000000     
+ coefficient for heat source:           -6.00000000000000     
+ coefficient for magnetic field:         1.00000000000000     
+ coefficient for magnetic potential:     1.00000000000000     
+ coefficient for magnetic diffusion:     2.00000000000000     
+ coefficient for induction:              1.00000000000000     
+ check rtp -> rtm
+ check rtm -> rtp
+ check rj -> rlm
+ check rlm -> rj
+ check rtp -> rtm
+ check rtm -> rtp
+ check rj -> rlm
+ check rlm -> rj
+ test  send_recv with reg. import
+ test  send_recv with rev. import
+ 0: Time by reg. import list:   0.937174007296562     
+ 1: Time by rev. import list:    1.17052402719855     
+Communication mode for sph. transform:    0 (regular_table) 
+Selected communication routine:    0 (SEND_RECV) 
+ Vector length for Legendre transform:           0
+ Block number for meridinal grid:            1
+ Block number for Legendre transform:            1
+ Use FFTPACK
+ Use FFTPACK
+ Use FFTPACK
+ Use FFTPACK
+ 1: elapsed by FFTPACK:   0.366189595311880     
+ 2: elapsed by FFTW3:     0.371258299797773     
+ 3: elapsed by single FFTW3:     0.358884356915951     
+ 4: elapsed by field FFTW3:     0.376025352627039     
+ Use FFTPACK
+Selected Fourier transform:    5 (ISPACK) 
+Selected id_legendre_transfer:    1 (ORIGINAL_LOOP) 
+ Read ascii data file: rst_64/rst.500.0.fst
+time step=         2500100     time= 1.25005000E+00  E_kin =  1.31040902E+04  E_mag =
+  3.73106217E-01
+[lfairchild@baribu project]$ ls
+calypso-batch.sh  picked_mode.dat     sph_lm95t144r96c_64    sph_pwr_volume_m.dat
+control_MHD       rst_64              sph_pwr_volume.dat
+field             slurm-3587.out      sph_pwr_volume_l.dat
+gauss_coefs.dat   sph_ave_volume.dat  sph_pwr_volume_lm.dat
+[lfairchild@baribu project]$ more control_MHD
+begin MHD_control
+!!!!! Define for files !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!
+!  num_subdomain_ctl: number of subdomains
+!  num_smp_ctl:       number of smp processes
+!
+!  mesh_file_head_ctl:  header of mesh file (Default: in.domain#)
+!
+!  sph_file_prefix:     prefix of spherical transfoem grid
+!  restart_file_prefix: prefix of restart file
+!                            (Default: restart/rst.step#.domain#)
+!  field_file_prefix:   prefix of snapshot field data
+!                            (Default: out.step#.domain#.udt)
+!
+!  field_file_fmt_ctl:  data format for field files
+!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!
+  begin data_files_def
+    debug_flag_ctl            'OFF'
+!
+    num_subdomain_ctl            64
+    num_smp_ctl                  1
+!
+    sph_file_prefix             'sph_lm95t144r96c_64/in'
+!
+    restart_file_prefix         'rst_64/rst'
+    field_file_prefix           'field/out'
+!
+    field_file_fmt_ctl          'merged_VTK'
+  end data_files_def
+!
+  begin model
+!!!!!  physical values!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! available valuables 
+!   velocity, temperature, pressure, vorticity
+!   vector_potential, magnetic_field, current_density, magnetic_potential
+!   composition, perturbation_temp
+!
+!   buoyancy_flux, Lorentz_work, mag_tension_work
+!   magnetic_ene_generation
+!   temp_generation, part_temp_gen
+!   vis_ene_diffuse, mag_ene_diffuse
+!
+!   thermal_diffusion, viscous_diffusion, magnetic_diffusion
+!   Coriolis_force, buoyancy
+!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+    begin phys_values_ctl
+      array nod_value_ctl     7
+        nod_value_ctl  velocity                Viz_Off   Monitor_On
+        nod_value_ctl  temperature             Viz_On   Monitor_On
+        nod_value_ctl  pressure                Viz_Off   Monitor_On
+        nod_value_ctl  vorticity               Viz_Off   Monitor_On
+        nod_value_ctl  magnetic_field          Viz_On   Monitor_On
+        nod_value_ctl  heat_source             Viz_Off  Monitor_Off
+        nod_value_ctl  grad_temp               Viz_On  Monitor_On
+!
+      end array nod_value_ctl
+    end phys_values_ctl
+!
+!!!!!  physical values for time evolution !!!!!!!!!!!!!!!!!!
+! aviable valuables: velocity, temperature, magnetic_field
+!                    vector_potential, composition
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+    begin time_evolution_ctl
+      array time_evo_ctl   3
+        time_evo_ctl  temperature
+        time_evo_ctl  velocity
+        time_evo_ctl  magnetic_field
+      end array time_evo_ctl
+    end time_evolution_ctl
+!
+!!!!!  setting for boundary condition
+!
+    begin boundary_condition
+      array bc_temperature  2
+        bc_temperature  fixed ICB  1.000
+        bc_temperature  fixed CMB  0.000
+      end array bc_temperature
+!
+      array bc_velocity    2
+        bc_velocity  non_slip_sph  ICB   0.000
+        bc_velocity  non_slip_sph  CMB   0.000
+      end array bc_velocity
+!
+      array bc_composition      0
+!
+      array bc_magnetic_field   2
+        bc_magnetic_field  insulator  ICB  0.000
+        bc_magnetic_field  insulator  CMB  0.000
+      end array bc_magnetic_field
+    end boundary_condition
+!
+!!!!!  define of forces !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!  available forces
+!     gravity, Coriolis, Lorentz
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+    begin forces_define
+      array force_ctl      3
+        force_ctl   gravity
+        force_ctl   Coriolis
+        force_ctl   Lorentz
+      end array force_ctl
+    end forces_define
+!
+!!!!!  dimensionless numbers !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!  available numbers
+!     Prandtl_number, magnetic_Prandtl_number
+!     Rayleigh_number, modified_Rayleigh_number
+!     Reynords_number
+!     Taylor_number, Ekman_number
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+    begin dimensionless_ctl
+      array dimless_ctl 5 
+        dimless_ctl  Prandtl_number                   1.0e-0
+        dimless_ctl  modified_Rayleigh_number         1.2E+3
+        dimless_ctl  Ekman_number                     5.0e-5
+        dimless_ctl  magnetic_Prandtl_number          5.0e-1
+        dimless_ctl  Qt                               -6.0e-0
+      end array dimless_ctl
+    end dimensionless_ctl
+!
+!!!!! Normalization settings  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!
+!    define
+!     coef_4_termal_ctl:      time integration and advection of temp
+!     coef_4_velocity_ctl:    time integration and advection of temperature
+!     coef_4_magnetic_ctl:    time integration and advection of magnetic f.
+!     coef_4_t_diffuse_ctl:   coefficients for thermal diffusion
+!     coef_4_v_diffuse_ctl:   coefficients for viscous diffusion
+!     coef_4_m_diffuse_ctl:   coefficients for magnetic diffusion
+!     coef_4_buoyancy_ctl:    coefficients for buoyancy
+!     coef_4_Coriolis_ctl:    coefficients for Coriolis force
+!     coef_4_Lorentz_ctl:     coefficients for Lorantz force
+!     coef_4_composit_buoyancy_ctl: 
+!                             coefficients for compositional buoyancy
+!     coef_4_induction_ctl:   coefficients for magnetic induction
+!
+!     One:  1, Zero (Ignore), Two:  2,   Radial_parameter: (1-ri/ro)
+!     Radial_35: (1-0.35)
+!
+!     Real number.... Power of each numbers
+!
+!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!
+!
+    begin coefficients_ctl
+      begin thermal
+        array coef_4_termal_ctl     1
+          coef_4_termal_ctl            One                        1.0
+        end array coef_4_termal_ctl
+!
+        array coef_4_t_diffuse_ctl  1
+          coef_4_t_diffuse_ctl         Prandtl_number            -1.0
+        end array coef_4_t_diffuse_ctl
+!
+        array coef_4_heat_source_ctl  1
+          coef_4_heat_source_ctl          Qt                     1.0
+        end array coef_4_heat_source_ctl
+      end thermal
+!
+!
+      begin momentum
+        array coef_4_velocity_ctl   1
+          coef_4_velocity_ctl          One                        1.0
+        end array coef_4_velocity_ctl
+!
+        array coef_4_press_ctl      1
+          coef_4_press_ctl             Ekman_number              -1.0
+        end array coef_4_press_ctl
+!
+        array coef_4_v_diffuse_ctl  1
+          coef_4_v_diffuse_ctl         One                        1.0
+        end array coef_4_v_diffuse_ctl
+!
+        array coef_4_buoyancy_ctl   3
+          coef_4_buoyancy_ctl          Radial_35                  1.0
+          coef_4_buoyancy_ctl          modified_Rayleigh_number   1.0
+          coef_4_buoyancy_ctl          Ekman_number              -1.0
+        end array coef_4_buoyancy_ctl
+!
+        array coef_4_Coriolis_ctl   2
+          coef_4_Coriolis_ctl          Two                        1.0
+          coef_4_Coriolis_ctl          Ekman_number              -1.0
+        end array coef_4_Coriolis_ctl
+!
+        array coef_4_Lorentz_ctl    2
+          coef_4_Lorentz_ctl           magnetic_Prandtl_number   -1.0
+          coef_4_Lorentz_ctl           Ekman_number              -1.0
+        end array coef_4_Lorentz_ctl
+      end momentum
+!
+!
+      begin induction
+        array coef_4_magnetic_ctl   1
+          coef_4_magnetic_ctl          One                        1.0
+        end array coef_4_magnetic_ctl
+!
+        array coef_4_m_diffuse_ctl  1
+          coef_4_m_diffuse_ctl         magnetic_Prandtl_number   -1.0
+        end array coef_4_m_diffuse_ctl
+!
+        array coef_4_induction_ctl  1
+          coef_4_induction_ctl         One                       -1.0
+        end array coef_4_induction_ctl
+      end induction
+    end coefficients_ctl
+!
+!!!!!!!!! model for hydrostatic !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!
+!    ref_temperature_ctl: none           (No reference of temperature)
+!                         spherical_shell (for spherical shell model)
+!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+    begin temperature_define
+!      ref_temp_ctl     none
+      ref_temp_ctl              spherical_shell
+      begin low_temp_ctl
+        depth         1.5384615384615384
+        temperature   0.0d0
+      end low_temp_ctl
+      begin high_temp_ctl
+        depth         0.5384615384615384
+        temperature   1.0d0
+      end high_temp_ctl
+    end temperature_define
+  end model
+!
+!
+!
+  begin control
+!!!!!  information for sime integration
+   begin time_step_ctl
+      elapsed_time_ctl      80000.
+      i_step_init_ctl      2500000
+      i_step_finish_ctl    2501000
+!
+      i_step_check_ctl       100
+      i_step_rst_ctl         5000
+      i_step_field_ctl       0
+!
+      dt_ctl              5.0e-7
+      time_init_ctl       0.0e-8
+    end time_step_ctl
+!
+!!!!!  control for restart data
+    begin restart_file_ctl
+!      rst_ctl                dynamo_benchmark_1
+       rst_ctl                start_from_rst_file
+    end restart_file_ctl
+!
+!!!!!!   method for time evolution
+!
+    begin time_loop_ctl
+      scheme_ctl              Crank_Nicolson
+      coef_imp_v_ctl          6.0e-1
+      coef_imp_t_ctl          6.0e-1
+      coef_imp_b_ctl          6.0e-1
+      coef_imp_d_ctl          6.0e-1
+      Legendre_trans_loop_ctl   'outer_field_loop'
+    end time_loop_ctl
+  end control
+!
+!   Long_loop, outer_field_loop...broken...
+!                   ('inner_radial_loop', 'outer_radial_loop', 'long_loop',
+!                    'original_loop', 'outer_field_loop'
+!
+  begin sph_monitor_ctl
+    volume_average_prefix        'sph_ave_volume'
+    volume_pwr_spectr_prefix     'sph_pwr_volume'
+!    layered_pwr_spectr_prefix    'sph_pwr_layer'
+!
+    picked_sph_prefix     'picked_mode'
+    gauss_coefs_prefix    'gauss_coefs'
+    gauss_coefs_radius_ctl    2.91
+!
+    array pick_sph_spectr_ctl  1
+      pick_sph_spectr_ctl   0   0
+!     pick_sph_spectr_ctl   2   0
+    end array pick_sph_spectr_ctl
+!
+!   array pick_gauss_coef_degree_ctl  1
+!     pick_gauss_coef_degree_ctl   1
+!   end array pick_gauss_coef_degree_ctl
+!
+  end sph_monitor_ctl
+end MHD_control
+[lfairchild@baribu project]$  ls
+calypso-batch.sh  picked_mode.dat     sph_lm95t144r96c_64    sph_pwr_volume_m.dat
+control_MHD       rst_64              sph_pwr_volume.dat
+field             slurm-3587.out      sph_pwr_volume_l.dat
+gauss_coefs.dat   sph_ave_volume.dat  sph_pwr_volume_lm.dat
+[lfairchild@baribu project]$ more sph_pwr_volume.dat
+radial_layers, truncation
+               0              95
+ICB_id, CMB_id
+               1              97
+number of components
+               6              14
+    1    3    3    3    1    3
+t_step    time    temperature    M_ene_pol    M_ene_tor    M_ene    grad_temp_pol    
+grad_temp_tor    grad_temp    K_ene_pol    K_ene_tor    K_ene    pressure    vorticit
+y_pol    vorticity_tor    vorticity    
+         2500100  1.25004999999778E+000  1.82545260263682E-002  1.94377087826461E-001
+  1.78729129414607E-001  3.73106217241068E-001  4.63417942061936E+000  0.000000000000
+00E+000  4.63417942061936E+000  3.48992758811957E+003  9.61416258959636E+003  1.31040
+901777159E+004  6.28285651975686E+003  1.25209524833561E+007  8.31022468316240E+006  
+2.08311771665185E+007
+         2500200  1.25009999999778E+000  1.82541396093867E-002  1.94321928770239E-001
+  1.77759054855401E-001  3.72080983625639E-001  4.63338117062239E+000  0.000000000000
+00E+000  4.63338117062239E+000  3.47077923390983E+003  9.61293807373148E+003  1.30837
+173076413E+004  6.28461937283091E+003  1.24944314911752E+007  8.26437670862172E+006  
+2.07588081997970E+007
+         2500300  1.25014999999779E+000  1.82541314731851E-002  1.94290584087786E-001
+  1.76793174178470E-001  3.71083758266257E-001  4.63257423221283E+000  0.000000000000
+00E+000  4.63257423221283E+000  3.45771727039612E+003  9.60505519866930E+003  1.30627
+724690654E+004  6.28640841467515E+003  1.24587545019537E+007  8.22380326210990E+006  
+2.06825577640636E+007
+[lfairchild@baribu project]$ ls
+calypso-batch.sh  picked_mode.dat     sph_lm95t144r96c_64    sph_pwr_volume_m.dat
+control_MHD       rst_64              sph_pwr_volume.dat
+field             slurm-3587.out      sph_pwr_volume_l.dat
+gauss_coefs.dat   sph_ave_volume.dat  sph_pwr_volume_lm.dat
+[lfairchild@baribu project]$ more gauss_coefs.dat
+num_spectr, reference_radius
+            9216   2.910000000000000E+000
+t_step    time    g0_0    h1_1    g1_0    g1_1    h2_2    h2_1    g2_0    g2_1    g2_
+2    h3_3    h3_2    h3_1    g3_0    g3_1    g3_2    g3_3    h4_4    h4_3    h4_2    
+h4_1    g4_0    g4_1    g4_2    g4_3    g4_4    h5_5    h5_4    h5_3    h5_2    h5_1 
+   g5_0    g5_1    g5_2    g5_3    g5_4    g5_5    h6_6    h6_5    h6_4    h6_3    h6
+_2    h6_1    g6_0    g6_1    g6_2    g6_3    g6_4    g6_5    g6_6    h7_7    h7_6   
+ h7_5    h7_4    h7_3    h7_2    h7_1    g7_0    g7_1    g7_2    g7_3    g7_4    g7_5
+    g7_6    g7_7    h8_8    h8_7    h8_6    h8_5    h8_4    h8_3    h8_2    h8_1    g
+8_0    g8_1    g8_2    g8_3    g8_4    g8_5    g8_6    g8_7    g8_8    h9_9    h9_8  
+  h9_7    h9_6    h9_5    h9_4    h9_3    h9_2    h9_1    g9_0    g9_1    g9_2    g9_
+3    g9_4    g9_5    g9_6    g9_7    g9_8    g9_9    h10_10    h10_9    h10_8    h10_
+7    h10_6    h10_5    h10_4    h10_3    h10_2    h10_1    g10_0    g10_1    g10_2   
+ g10_3    g10_4    g10_5    g10_6    g10_7    g10_8    g10_9    g10_10    h11_11    h
+11_10    h11_9    h11_8    h11_7    h11_6    h11_5    h11_4    h11_3    h11_2    h11_
+1    g11_0    g11_1    g11_2    g11_3    g11_4    g11_5    g11_6    g11_7    g11_8   
+ g11_9    g11_10    g11_11    h12_12    h12_11    h12_10    h12_9    h12_8    h12_7  
+  h12_6    h12_5    h12_4    h12_3    h12_2    h12_1    g12_0    g12_1    g12_2    g1
+2_3    g12_4    g12_5    g12_6    g12_7    g12_8    g12_9    g12_10    g12_11    g12_
+12    h13_13    h13_12    h13_11    h13_10    h13_9    h13_8    h13_7    h13_6    h13
+_5    h13_4    h13_3    h13_2    h13_1    g13_0    g13_1    g13_2    g13_3    g13_4  
+  g13_5    g13_6    g13_7    g13_8    g13_9    g13_10    g13_11    g13_12    g13_13  
+  h14_14    h14_13    h14_12    h14_11    h14_10    h14_9    h14_8    h14_7    h14_6 
+   h14_5    h14_4    h14_3    h14_2    h14_1    g14_0    g14_1    g14_2    g14_3    g
+14_4    g14_5    g14_6    g14_7    g14_8    g14_9    g14_10    g14_11    g14_12    g1
+4_13    g14_14    h15_15    h15_14    h15_13    h15_12    h15_11    h15_10    h15_9  
+  h15_8    h15_7    h15_6    h15_5    h15_4    h15_3    h15_2    h15_1    g15_0    g1
+5_1    g15_2    g15_3    g15_4    g15_5    g15_6    g15_7    g15_8    g15_9    g15_10
+    g15_11    g15_12    g15_13    g15_14    g15_15    h16_16    h16_15    h16_14    h
+16_13    h16_12    h16_11    h16_10    h16_9    h16_8    h16_7    h16_6    h16_5    h
+16_4    h16_3    h16_2    h16_1    g16_0    g16_1    g16_2    g16_3    g16_4    g16_5
+    g16_6    g16_7    g16_8    g16_9    g16_10    g16_11    g16_12    g16_13    g16_1
+4    g16_15    g16_16    h17_17    h17_16    h17_15    h17_14    h17_13    h17_12    
+h17_11    h17_10    h17_9    h17_8    h17_7    h17_6    h17_5    h17_4    h17_3    h1
+7_2    h17_1    g17_0    g17_1    g17_2    g17_3    g17_4    g17_5    g17_6    g17_7 
+   g17_8    g17_9    g17_10    g17_11    g17_12    g17_13    g17_14    g17_15    g17_
+16    g17_17    h18_18    h18_17    h18_16    h18_15    h18_14    h18_13    h18_12   
+ h18_11    h18_10    h18_9    h18_8    h18_7    h18_6    h18_5    h18_4    h18_3    h
+18_2    h18_1    g18_0    g18_1    g18_2    g18_3    g18_4    g18_5    g18_6    g18_7
+    g18_8    g18_9    g18_10    g18_11    g18_12    g18_13    g18_14    g18_15    g18
+_16    g18_17    g18_18    h19_19    h19_18    h19_17    h19_16    h19_15    h19_14  
+  h19_13    h19_12    h19_11    h19_10    h19_9    h19_8    h19_7    h19_6    h19_5  
+  h19_4    h19_3    h19_2    h19_1    g19_0    g19_1    g19_2    g19_3    g19_4    g1
+9_5    g19_6    g19_7    g19_8    g19_9    g19_10    g19_11    g19_12    g19_13    g1
+9_14    g19_15    g19_16    g19_17    g19_18    g19_19    h20_20    h20_19    h20_18 
+   h20_17    h20_16    h20_15    h20_14    h20_13    h20_12    h20_11    h20_10    h2
+0_9    h20_8    h20_7    h20_6    h20_5    h20_4    h20_3    h20_2    h20_1    g20_0 
+   g20_1    g20_2    g20_3    g20_4    g20_5    g20_6    g20_7    g20_8    g20_9    g
+20_10    g20_11    g20_12    g20_13    g20_14    g20_15    g20_16    g20_17    g20_18
+    g20_19    g20_20    h21_21    h21_20    h21_19    h21_18    h21_17    h21_16    h
+21_15    h21_14    h21_13    h21_12    h21_11    h21_10    h21_9    h21_8    h21_7   
+ h21_6    h21_5    h21_4    h21_3    h21_2    h21_1    g21_0    g21_1    g21_2    g21
+_3    g21_4    g21_5    g21_6    g21_7    g21_8    g21_9    g21_10    g21_11    g21_1
+2    g21_13    g21_14    g21_15    g21_16    g21_17    g21_18    g21_19    g21_20    
+g21_21    h22_22    h22_21    h22_20    h22_19    h22_18    h22_17    h22_16    h22_1
+5    h22_14    h22_13    h22_12    h22_11    h22_10    h22_9    h22_8    h22_7    h22
+_6    h22_5    h22_4    h22_3    h22_2    h22_1    g22_0    g22_1    g22_2    g22_3  
+  g22_4    g22_5    g22_6    g22_7    g22_8    g22_9    g22_10    g22_11    g22_12   
+ g22_13    g22_14    g22_15    g22_16    g22_17    g22_18    g22_19    g22_20    g22_
+21    g22_22    h23_23    h23_22    h23_21    h23_20    h23_19    h23_18    h23_17   
+ h23_16    h23_15    h23_14    h23_13    h23_12    h23_11    h23_10    h23_9    h23_8
+    h23_7    h23_6    h23_5    h23_4    h23_3    h23_2    h23_1    g23_0    g23_1    
+g23_2    g23_3    g23_4    g23_5    g23_6    g23_7    g23_8    g23_9    g23_10    g23
+_11    g23_12    g23_13    g23_14    g23_15    g23_16    g23_17    g23_18    g23_19  
+  g23_20    g23_21    g23_22    g23_23    h24_24    h24_23    h24_22    h24_21    h24
+_20    h24_19    h24_18    h24_17    h24_16    h24_15    h24_14    h24_13    h24_12  
+  h24_11    h24_10    h24_9    h24_8    h24_7    h24_6    h24_5    h24_4    h24_3    
+h24_2    h24_1    g24_0    g24_1    g24_2    g24_3    g24_4    g24_5    g24_6    g24_
+7    g24_8    g24_9    g24_10    g24_11    g24_12    g24_13    g24_14    g24_15    g2
+4_16    g24_17    g24_18    g24_19    g24_20    g24_21    g24_22    g24_23    g24_24 
+   h25_25    h25_24    h25_23    h25_22    h25_21    h25_20    h25_19    h25_18    h2
+5_17    h25_16    h25_15    h25_14    h25_13    h25_12    h25_11    h25_10    h25_9  
+  h25_8    h25_7    h25_6    h25_5    h25_4    h25_3    h25_2    h25_1    g25_0    g2
+5_1    g25_2    g25_3    g25_4    g25_5    g25_6    g25_7    g25_8    g25_9    g25_10
+    g25_11    g25_12    g25_13    g25_14    g25_15    g25_16    g25_17    g25_18    g
+25_19    g25_20    g25_21    g25_22    g25_23    g25_24    g25_25    h26_26    h26_25
+    h26_24    h26_23    h26_22    h26_21    h26_20    h26_19    h26_18    h26_17    h
+26_16    h26_15    h26_14    h26_13    h26_12    h26_11    h26_10    h26_9    h26_8  
+  h26_7    h26_6    h26_5    h26_4    h26_3    h26_2    h26_1    g26_0    g26_1    g2
+6_2    g26_3    g26_4    g26_5    g26_6    g26_7    g26_8    g26_9    g26_10    g26_1
+1    g26_12    g26_13    g26_14    g26_15    g26_16    g26_17    g26_18    g26_19    
+g26_20    g26_21    g26_22    g26_23    g26_24    g26_25    g26_26    h27_27    h27_2
+6    h27_25    h27_24    h27_23    h27_22    h27_21    h27_20    h27_19    h27_18    
+h27_17    h27_16    h27_15    h27_14    h27_13    h27_12    h27_11    h27_10    h27_9
+    h27_8    h27_7    h27_6    h27_5    h27_4    h27_3    h27_2    h27_1    g27_0    
+g27_1    g27_2    g27_3    g27_4    g27_5    g27_6    g27_7    g27_8    g27_9    g27_
+10    g27_11    g27_12    g27_13    g27_14    g27_15    g27_16    g27_17    g27_18   
+ g27_19    g27_20    g27_21    g27_22    g27_23    g27_24    g27_25    g27_26    g27_
+27    h28_28    h28_27    h28_26    h28_25    h28_24    h28_23    h28_22    h28_21   
+ h28_20    h28_19    h28_18    h28_17    h28_16    h28_15    h28_14    h28_13    h28_
+12    h28_11    h28_10    h28_9    h28_8    h28_7    h28_6    h28_5    h28_4    h28_3
+    h28_2    h28_1    g28_0    g28_1    g28_2    g28_3    g28_4    g28_5    g28_6    
+g28_7    g28_8    g28_9    g28_10    g28_11    g28_12    g28_13    g28_14    g28_15  
+  g28_16    g28_17    g28_18    g28_19    g28_20    g28_21    g28_22    g28_23    g28
+_24    g28_25    g28_26    g28_27    g28_28    h29_29    h29_28    h29_27    h29_26  
+  h29_25    h29_24    h29_23    h29_22    h29_21    h29_20    h29_19    h29_18    h29
+_17    h29_16    h29_15    h29_14    h29_13    h29_12    h29_11    h29_10    h29_9   
+ h29_8    h29_7    h29_6    h29_5    h29_4    h29_3    h29_2    h29_1    g29_0    g29
+_1    g29_2    g29_3    g29_4    g29_5    g29_6    g29_7    g29_8    g29_9    g29_10 
+   g29_11    g29_12    g29_13    g29_14    g29_15    g29_16    g29_17    g29_18    g2
+9_19    g29_20    g29_21    g29_22    g29_23    g29_24    g29_25    g29_26    g29_27 
+   g29_28    g29_29    h30_30    h30_29    h30_28    h30_27    h30_26    h30_25    h3
+0_24    h30_23    h30_22    h30_21    h30_20    h30_19    h30_18    h30_17    h30_16 
+   h30_15    h30_14    h30_13    h30_12    h30_11    h30_10    h30_9    h30_8    h30_
+7    h30_6    h30_5    h30_4    h30_3    h30_2    h30_1    g30_0    g30_1    g30_2   
+ g30_3    g30_4    g30_5    g30_6    g30_7    g30_8    g30_9    g30_10    g30_11    g
+30_12    g30_13    g30_14    g30_15    g30_16    g30_17    g30_18    g30_19    g30_20
+    g30_21    g30_22    g30_23    g30_24    g30_25    g30_26    g30_27    g30_28    g
+30_29    g30_30    h31_31    h31_30    h31_29    h31_28    h31_27    h31_26    h31_25
+    h31_24    h31_23    h31_22    h31_21    h31_20    h31_19    h31_18    h31_17    h
+31_16    h31_15    h31_14    h31_13    h31_12    h31_11    h31_10    h31_9    h31_8  
+  h31_7    h31_6    h31_5    h31_4    h31_3    h31_2    h31_1    g31_0    g31_1    g3
+1_2    g31_3    g31_4    g31_5    g31_6    g31_7    g31_8    g31_9    g31_10    g31_1
+1    g31_12    g31_13    g31_14    g31_15    g31_16    g31_17    g31_18    g31_19    
+g31_20    g31_21    g31_22    g31_23    g31_24    g31_25    g31_26    g31_27    g31_2
+8    g31_29    g31_30    g31_31    h32_32    h32_31    h32_30    h32_29    h32_28    
+h32_27    h32_26    h32_25    h32_24    h32_23    h32_22    h32_21    h32_20    h32_1
+9    h32_18    h32_17    h32_16    h32_15    h32_14    h32_13    h32_12    h32_11    
+h32_10    h32_9    h32_8    h32_7    h32_6    h32_5    h32_4    h32_3    h32_2    h32
+_1    g32_0    g32_1    g32_2    g32_3    g32_4    g32_5    g32_6    g32_7    g32_8  
+  g32_9    g32_10    g32_11    g32_12    g32_13    g32_14    g32_15    g32_16    g32_
+17    g32_18    g32_19    g32_20    g32_21    g32_22    g32_23    g32_24    g32_25   
+ g32_26    g32_27    g32_28    g32_29    g32_30    g32_31    g32_32    h33_33    h33_
+32    h33_31    h33_30    h33_29    h33_28    h33_27    h33_26    h33_25    h33_24   
+ h33_23    h33_22    h33_21    h33_20    h33_19    h33_18    h33_17    h33_16    h33_
+15    h33_14    h33_13    h33_12    h33_11    h33_10    h33_9    h33_8    h33_7    h3
+3_6    h33_5    h33_4    h33_3    h33_2    h33_1    g33_0    g33_1    g33_2    g33_3 
+   g33_4    g33_5    g33_6    g33_7    g33_8    g33_9    g33_10    g33_11    g33_12  
+  g33_13    g33_14    g33_15    g33_16    g33_17    g33_18    g33_19    g33_20    g33
+_21    g33_22    g33_23    g33_24    g33_25    g33_26    g33_27    g33_28    g33_29  
+  g33_30    g33_31    g33_32    g33_33    h34_34    h34_33    h34_32    h34_31    h34
+_30    h34_29    h34_28    h34_27    h34_26    h34_25    h34_24    h34_23    h34_22  
+  h34_21    h34_20    h34_19    h34_18    h34_17    h34_16    h34_15    h34_14    h34
+_13    h34_12    h34_11    h34_10    h34_9    h34_8    h34_7    h34_6    h34_5    h34
+_4    h34_3    h34_2    h34_1    g34_0    g34_1    g34_2    g34_3    g34_4    g34_5  
+  g34_6    g34_7    g34_8    g34_9    g34_10    g34_11    g34_12    g34_13    g34_14 
+   g34_15    g34_16    g34_17    g34_18    g34_19    g34_20    g34_21    g34_22    g3
+4_23    g34_24    g34_25    g34_26    g34_27    g34_28    g34_29    g34_30    g34_31 
+   g34_32    g34_33    g34_34    h35_35    h35_34    h35_33    h35_32    h35_31    h3
+5_30    h35_29    h35_28    h35_27    h35_26    h35_25    h35_24    h35_23    h35_22 
+   h35_21    h35_20    h35_19    h35_18    h35_17    h35_16    h35_15    h35_14    h3
+5_13    h35_12    h35_11    h35_10    h35_9    h35_8    h35_7    h35_6    h35_5    h3
+5_4    h35_3    h35_2    h35_1    g35_0    g35_1    g35_2    g35_3    g35_4    g35_5 
+   g35_6    g35_7    g35_8    g35_9    g35_10    g35_11    g35_12    g35_13    g35_14
+    g35_15    g35_16    g35_17    g35_18    g35_19    g35_20    g35_21    g35_22    g
+35_23    g35_24    g35_25    g35_26    g35_27    g35_28    g35_29    g35_30    g35_31
+    g35_32    g35_33    g35_34    g35_35    h36_36    h36_35    h36_34    h36_33    h
+36_32    h36_31    h36_30    h36_29    h36_28    h36_27    h36_26    h36_25    h36_24
+    h36_23    h36_22    h36_21    h36_20    h36_19    h36_18    h36_17    h36_16    h
+36_15    h36_14    h36_13    h36_12    h36_11    h36_10    h36_9    h36_8    h36_7   
+ h36_6    h36_5    h36_4    h36_3    h36_2    h36_1    g36_0    g36_1    g36_2    g36
+_3    g36_4    g36_5    g36_6    g36_7    g36_8    g36_9    g36_10    g36_11    g36_1
+2    g36_13    g36_14    g36_15    g36_16    g36_17    g36_18    g36_19    g36_20    
+g36_21    g36_22    g36_23    g36_24    g36_25    g36_26    g36_27    g36_28    g36_2
+9    g36_30    g36_31    g36_32    g36_33    g36_34    g36_35    g36_36    h37_37    
+h37_36    h37_35    h37_34    h37_33    h37_32    h37_31    h37_30    h37_29    h37_2
+8    h37_27    h37_26    h37_25    h37_24    h37_23    h37_22    h37_21    h37_20    
+h37_19    h37_18    h37_17    h37_16    h37_15    h37_14    h37_13    h37_12    h37_1
+1    h37_10    h37_9    h37_8    h37_7    h37_6    h37_5    h37_4    h37_3    h37_2  
+  h37_1    g37_0    g37_1    g37_2    g37_3    g37_4    g37_5    g37_6    g37_7    g3
+7_8    g37_9    g37_10    g37_11    g37_12    g37_13    g37_14    g37_15    g37_16   
+ g37_17    g37_18    g37_19    g37_20    g37_21    g37_22    g37_23    g37_24    g37_
+25    g37_26    g37_27    g37_28    g37_29    g37_30    g37_31    g37_32    g37_33   
+ g37_34    g37_35    g37_36    g37_37    h38_38    h38_37    h38_36    h38_35    h38_
+34    h38_33    h38_32    h38_31    h38_30    h38_29    h38_28    h38_27    h38_26   
+ h38_25    h38_24    h38_23    h38_22    h38_21    h38_20    h38_19    h38_18    h38_
+17    h38_16    h38_15    h38_14    h38_13    h38_12    h38_11    h38_10    h38_9    
+h38_8    h38_7    h38_6    h38_5    h38_4    h38_3    h38_2    h38_1    g38_0    g38_
+1    g38_2    g38_3    g38_4    g38_5    g38_6    g38_7    g38_8    g38_9    g38_10  
+  g38_11    g38_12    g38_13    g38_14    g38_15    g38_16    g38_17    g38_18    g38
+_19    g38_20    g38_21    g38_22    g38_23    g38_24    g38_25    g38_26    g38_27  
+  g38_28    g38_29    g38_30    g38_31    g38_32    g38_33    g38_34    g38_35    g38
+_36    g38_37    g38_38    h39_39    h39_38    h39_37    h39_36    h39_35    h39_34  
+  h39_33    h39_32    h39_31    h39_30    h39_29    h39_28    h39_27    h39_26    h39
+_25    h39_24    h39_23    h39_22    h39_21    h39_20    h39_19    h39_18    h39_17  
+  h39_16    h39_15    h39_14    h39_13    h39_12    h39_11    h39_10    h39_9    h39_
+8    h39_7    h39_6    h39_5    h39_4    h39_3    h39_2    h39_1    g39_0    g39_1   
+ g39_2    g39_3    g39_4    g39_5    g39_6    g39_7    g39_8    g39_9    g39_10    g3
+9_11    g39_12    g39_13    g39_14    g39_15    g39_16    g39_17    g39_18    g39_19 
+   g39_20    g39_21    g39_22    g39_23    g39_24    g39_25    g39_26    g39_27    g3
+9_28    g39_29    g39_30    g39_31    g39_32    g39_33    g39_34    g39_35    g39_36 
+   g39_37    g39_38    g39_39    h40_40    h40_39    h40_38    h40_37    h40_36    h4
+0_35    h40_34    h40_33    h40_32    h40_31    h40_30    h40_29    h40_28    h40_27 
+   h40_26    h40_25    h40_24    h40_23    h40_22    h40_21    h40_20    h40_19    h4
+0_18    h40_17    h40_16    h40_15    h40_14    h40_13    h40_12    h40_11    h40_10 
+   h40_9    h40_8    h40_7    h40_6    h40_5    h40_4    h40_3    h40_2    h40_1    g
+40_0    g40_1    g40_2    g40_3    g40_4    g40_5    g40_6    g40_7    g40_8    g40_9
+    g40_10    g40_11    g40_12    g40_13    g40_14    g40_15    g40_16    g40_17    g
+40_18    g40_19    g40_20    g40_21    g40_22    g40_23    g40_24    g40_25    g40_26
+    g40_27    g40_28    g40_29    g40_30    g40_31    g40_32    g40_33    g40_34    g
+40_35    g40_36    g40_37    g40_38    g40_39    g40_40    h41_41    h41_40    h41_39
+    h41_38    h41_37    h41_36    h41_35    h41_34    h41_33    h41_32    h41_31    h
+41_30    h41_29    h41_28    h41_27    h41_26    h41_25    h41_24    h41_23    h41_22
+    h41_21    h41_20    h41_19    h41_18    h41_17    h41_16    h41_15    h41_14    h
+41_13    h41_12    h41_11    h41_10    h41_9    h41_8    h41_7    h41_6    h41_5    h
+41_4    h41_3    h41_2    h41_1    g41_0    g41_1    g41_2    g41_3    g41_4    g41_5
+    g41_6    g41_7    g41_8    g41_9    g41_10    g41_11    g41_12    g41_13    g41_1
+4    g41_15    g41_16    g41_17    g41_18    g41_19    g41_20    g41_21    g41_22    
+g41_23    g41_24    g41_25    g41_26    g41_27    g41_28    g41_29    g41_30    g41_3
+1    g41_32    g41_33    g41_34    g41_35    g41_36    g41_37    g41_38    g41_39    
+g41_40    g41_41    h42_42    h42_41    h42_40    h42_39    h42_38    h42_37    h42_3
+6    h42_35    h42_34    h42_33    h42_32    h42_31    h42_30    h42_29    h42_28    
+h42_27    h42_26    h42_25    h42_24    h42_23    h42_22    h42_21    h42_20    h42_1
+9    h42_18    h42_17    h42_16    h42_15    h42_14    h42_13    h42_12    h42_11    
+h42_10    h42_9    h42_8    h42_7    h42_6    h42_5    h42_4    h42_3    h42_2    h42
+_1    g42_0    g42_1    g42_2    g42_3    g42_4    g42_5    g42_6    g42_7    g42_8  
+  g42_9    g42_10    g42_11    g42_12    g42_13    g42_14    g42_15    g42_16    g42_
+17    g42_18    g42_19    g42_20    g42_21    g42_22    g42_23    g42_24    g42_25   
+ g42_26    g42_27    g42_28    g42_29    g42_30    g42_31    g42_32    g42_33    g42_
+34    g42_35    g42_36    g42_37    g42_38    g42_39    g42_40    g42_41    g42_42   
+ h43_43    h43_42    h43_41    h43_40    h43_39    h43_38    h43_37    h43_36    h43_
+35    h43_34    h43_33    h43_32    h43_31    h43_30    h43_29    h43_28    h43_27   
+ h43_26    h43_25    h43_24    h43_23    h43_22    h43_21    h43_20    h43_19    h43_
+18    h43_17    h43_16    h43_15    h43_14    h43_13    h43_12    h43_11    h43_10   
+ h43_9    h43_8    h43_7    h43_6    h43_5    h43_4    h43_3    h43_2    h43_1    g43
+_0    g43_1    g43_2    g43_3    g43_4    g43_5    g43_6    g43_7    g43_8    g43_9  
+  g43_10    g43_11    g43_12    g43_13    g43_14    g43_15    g43_16    g43_17    g43
+_18    g43_19    g43_20    g43_21    g43_22    g43_23    g43_24    g43_25    g43_26  
+  g43_27    g43_28    g43_29    g43_30    g43_31    g43_32    g43_33    g43_34    g43
+_35    g43_36    g43_37    g43_38    g43_39    g43_40    g43_41    g43_42    g43_43  
+  h44_44    h44_43    h44_42    h44_41    h44_40    h44_39    h44_38    h44_37    h44
+_36    h44_35    h44_34    h44_33    h44_32    h44_31    h44_30    h44_29    h44_28  
+  h44_27    h44_26    h44_25    h44_24    h44_23    h44_22    h44_21    h44_20    h44
+_19    h44_18    h44_17    h44_16    h44_15    h44_14    h44_13    h44_12    h44_11  
+  h44_10    h44_9    h44_8    h44_7    h44_6    h44_5    h44_4    h44_3    h44_2    h
+44_1    g44_0    g44_1    g44_2    g44_3    g44_4    g44_5    g44_6    g44_7    g44_8
+    g44_9    g44_10    g44_11    g44_12    g44_13    g44_14    g44_15    g44_16    g4
+4_17    g44_18    g44_19    g44_20    g44_21    g44_22    g44_23    g44_24    g44_25 
+   g44_26    g44_27    g44_28    g44_29    g44_30    g44_31    g44_32    g44_33    g4
+4_34    g44_35    g44_36    g44_37    g44_38    g44_39    g44_40    g44_41    g44_42 
+   g44_43    g44_44    h45_45    h45_44    h45_43    h45_42    h45_41    h45_40    h4
+5_39    h45_38    h45_37    h45_36    h45_35    h45_34    h45_33    h45_32    h45_31 
+   h45_30    h45_29    h45_28    h45_27    h45_26    h45_25    h45_24    h45_23    h4
+5_22    h45_21    h45_20    h45_19    h45_18    h45_17    h45_16    h45_15    h45_14 
+   h45_13    h45_12    h45_11    h45_10    h45_9    h45_8    h45_7    h45_6    h45_5 
+   h45_4    h45_3    h45_2    h45_1    g45_0    g45_1    g45_2    g45_3    g45_4    g
+45_5    g45_6    g45_7    g45_8    g45_9    g45_10    g45_11    g45_12    g45_13    g
+45_14    g45_15    g45_16    g45_17    g45_18    g45_19    g45_20    g45_21    g45_22
+    g45_23    g45_24    g45_25    g45_26    g45_27    g45_28    g45_29    g45_30    g
+45_31    g45_32    g45_33    g45_34    g45_35    g45_36    g45_37    g45_38    g45_39
+    g45_40    g45_41    g45_42    g45_43    g45_44    g45_45    h46_46    h46_45    h
+46_44    h46_43    h46_42    h46_41    h46_40    h46_39    h46_38    h46_37    h46_36
+    h46_35    h46_34    h46_33    h46_32    h46_31    h46_30    h46_29    h46_28    h
+46_27    h46_26    h46_25    h46_24    h46_23    h46_22    h46_21    h46_20    h46_19
+    h46_18    h46_17    h46_16    h46_15    h46_14    h46_13    h46_12    h46_11    h
+46_10    h46_9    h46_8    h46_7    h46_6    h46_5    h46_4    h46_3    h46_2    h46_
+1    g46_0    g46_1    g46_2    g46_3    g46_4    g46_5    g46_6    g46_7    g46_8   
+ g46_9    g46_10    g46_11    g46_12    g46_13    g46_14    g46_15    g46_16    g46_1
+7    g46_18    g46_19    g46_20    g46_21    g46_22    g46_23    g46_24    g46_25    
+g46_26    g46_27    g46_28    g46_29    g46_30    g46_31    g46_32    g46_33    g46_3
+4    g46_35    g46_36    g46_37    g46_38    g46_39    g46_40    g46_41    g46_42    
+g46_43    g46_44    g46_45    g46_46    h47_47    h47_46    h47_45    h47_44    h47_4
+3    h47_42    h47_41    h47_40    h47_39    h47_38    h47_37    h47_36    h47_35    
+h47_34    h47_33    h47_32    h47_31    h47_30    h47_29    h47_28    h47_27    h47_2
+6    h47_25    h47_24    h47_23    h47_22    h47_21    h47_20    h47_19    h47_18    
+h47_17    h47_16    h47_15    h47_14    h47_13    h47_12    h47_11    h47_10    h47_9
+    h47_8    h47_7    h47_6    h47_5    h47_4    h47_3    h47_2    h47_1    g47_0    
+g47_1    g47_2    g47_3    g47_4    g47_5    g47_6    g47_7    g47_8    g47_9    g47_
+10    g47_11    g47_12    g47_13    g47_14    g47_15    g47_16    g47_17    g47_18   
+ g47_19    g47_20    g47_21    g47_22    g47_23    g47_24    g47_25    g47_26    g47_
+27    g47_28    g47_29    g47_30    g47_31    g47_32    g47_33    g47_34    g47_35   
+ g47_36    g47_37    g47_38    g47_39    g47_40    g47_41    g47_42    g47_43    g47_
+44    g47_45    g47_46    g47_47    h48_48    h48_47    h48_46    h48_45    h48_44   
+ h48_43    h48_42    h48_41    h48_40    h48_39    h48_38    h48_37    h48_36    h48_
+35    h48_34    h48_33    h48_32    h48_31    h48_30    h48_29    h48_28    h48_27   
+ h48_26    h48_25    h48_24    h48_23    h48_22    h48_21    h48_20    h48_19    h48_
+18    h48_17    h48_16    h48_15    h48_14    h48_13    h48_12    h48_11    h48_10   
+ h48_9    h48_8    h48_7    h48_6    h48_5    h48_4    h48_3    h48_2    h48_1    g48
+_0    g48_1    g48_2    g48_3    g48_4    g48_5    g48_6    g48_7    g48_8    g48_9  
+  g48_10    g48_11    g48_12    g48_13    g48_14    g48_15    g48_16    g48_17    g48
+_18    g48_19    g48_20    g48_21    g48_22    g48_23    g48_24    g48_25    g48_26  
+  g48_27    g48_28    g48_29    g48_30    g48_31    g48_32    g48_33    g48_34    g48
+_35    g48_36    g48_37    g48_38    g48_39    g48_40    g48_41    g48_42    g48_43  
+  g48_44    g48_45    g48_46    g48_47    g48_48    h49_49    h49_48    h49_47    h49
+_46    h49_45    h49_44    h49_43    h49_42    h49_41    h49_40    h49_39    h49_38  
+  h49_37    h49_36    h49_35    h49_34    h49_33    h49_32    h49_31    h49_30    h49
+_29    h49_28    h49_27    h49_26    h49_25    h49_24    h49_23    h49_22    h49_21  
+  h49_20    h49_19    h49_18    h49_17    h49_16    h49_15    h49_14    h49_13    h49
+_12    h49_11    h49_10    h49_9    h49_8    h49_7    h49_6    h49_5    h49_4    h49_
+3    h49_2    h49_1    g49_0    g49_1    g49_2    g49_3    g49_4    g49_5    g49_6   
+ g49_7    g49_8    g49_9    g49_10    g49_11    g49_12    g49_13    g49_14    g49_15 
+   g49_16    g49_17    g49_18    g49_19    g49_20    g49_21    g49_22    g49_23    g4
+9_24    g49_25    g49_26    g49_27    g49_28    g49_29    g49_30    g49_31    g49_32 
+   g49_33    g49_34    g49_35    g49_36    g49_37    g49_38    g49_39    g49_40    g4
+9_41    g49_42    g49_43    g49_44    g49_45    g49_46    g49_47    g49_48    g49_49 
+   h50_50    h50_49    h50_48    h50_47    h50_46    h50_45    h50_44    h50_43    h5
+0_42    h50_41    h50_40    h50_39    h50_38    h50_37    h50_36    h50_35    h50_34 
+   h50_33    h50_32    h50_31    h50_30    h50_29    h50_28    h50_27    h50_26    h5
+0_25    h50_24    h50_23    h50_22    h50_21    h50_20    h50_19    h50_18    h50_17 
+   h50_16    h50_15    h50_14    h50_13    h50_12    h50_11    h50_10    h50_9    h50
+_8    h50_7    h50_6    h50_5    h50_4    h50_3    h50_2    h50_1    g50_0    g50_1  
+  g50_2    g50_3    g50_4    g50_5    g50_6    g50_7    g50_8    g50_9    g50_10    g
+50_11    g50_12    g50_13    g50_14    g50_15    g50_16    g50_17    g50_18    g50_19
+    g50_20    g50_21    g50_22    g50_23    g50_24    g50_25    g50_26    g50_27    g
+50_28    g50_29    g50_30    g50_31    g50_32    g50_33    g50_34    g50_35    g50_36
+    g50_37    g50_38    g50_39    g50_40    g50_41    g50_42    g50_43    g50_44    g
+50_45    g50_46    g50_47    g50_48    g50_49    g50_50    h51_51    h51_50    h51_49
+    h51_48    h51_47    h51_46    h51_45    h51_44    h51_43    h51_42    h51_41    h
+51_40    h51_39    h51_38    h51_37    h51_36    h51_35    h51_34    h51_33    h51_32
+    h51_31    h51_30    h51_29    h51_28    h51_27    h51_26    h51_25    h51_24    h
+51_23    h51_22    h51_21    h51_20    h51_19    h51_18    h51_17    h51_16    h51_15
+    h51_14    h51_13    h51_12    h51_11    h51_10    h51_9    h51_8    h51_7    h51_
+6    h51_5    h51_4    h51_3    h51_2    h51_1    g51_0    g51_1    g51_2    g51_3   
+ g51_4    g51_5    g51_6    g51_7    g51_8    g51_9    g51_10    g51_11    g51_12    
+g51_13    g51_14    g51_15    g51_16    g51_17    g51_18    g51_19    g51_20    g51_2
+1    g51_22    g51_23    g51_24    g51_25    g51_26    g51_27    g51_28    g51_29    
+g51_30    g51_31    g51_32    g51_33    g51_34    g51_35    g51_36    g51_37    g51_3
+8    g51_39    g51_40    g51_41    g51_42    g51_43    g51_44    g51_45    g51_46    
+g51_47    g51_48    g51_49    g51_50    g51_51    h52_52    h52_51    h52_50    h52_4
+9    h52_48    h52_47    h52_46    h52_45    h52_44    h52_43    h52_42    h52_41    
+h52_40    h52_39    h52_38    h52_37    h52_36    h52_35    h52_34    h52_33    h52_3
+2    h52_31    h52_30    h52_29    h52_28    h52_27    h52_26    h52_25    h52_24    
+h52_23    h52_22    h52_21    h52_20    h52_19    h52_18    h52_17    h52_16    h52_1
+5    h52_14    h52_13    h52_12    h52_11    h52_10    h52_9    h52_8    h52_7    h52
+_6    h52_5    h52_4    h52_3    h52_2    h52_1    g52_0    g52_1    g52_2    g52_3  
+  g52_4    g52_5    g52_6    g52_7    g52_8    g52_9    g52_10    g52_11    g52_12   
+ g52_13    g52_14    g52_15    g52_16    g52_17    g52_18    g52_19    g52_20    g52_
+21    g52_22    g52_23    g52_24    g52_25    g52_26    g52_27    g52_28    g52_29   
+ g52_30    g52_31    g52_32    g52_33    g52_34    g52_35    g52_36    g52_37    g52_
+38    g52_39    g52_40    g52_41    g52_42    g52_43    g52_44    g52_45    g52_46   
+ g52_47    g52_48    g52_49    g52_50    g52_51    g52_52    h53_53    h53_52    h53_
+51    h53_50    h53_49    h53_48    h53_47    h53_46    h53_45    h53_44    h53_43   
+ h53_42    h53_41    h53_40    h53_39    h53_38    h53_37    h53_36    h53_35    h53_
+34    h53_33    h53_32    h53_31    h53_30    h53_29    h53_28    h53_27    h53_26   
+ h53_25    h53_24    h53_23    h53_22    h53_21    h53_20    h53_19    h53_18    h53_
+17    h53_16    h53_15    h53_14    h53_13    h53_12    h53_11    h53_10    h53_9    
+h53_8    h53_7    h53_6    h53_5    h53_4    h53_3    h53_2    h53_1    g53_0    g53_
+1    g53_2    g53_3    g53_4    g53_5    g53_6    g53_7    g53_8    g53_9    g53_10  
+  g53_11    g53_12    g53_13    g53_14    g53_15    g53_16    g53_17    g53_18    g53
+_19    g53_20    g53_21    g53_22    g53_23    g53_24    g53_25    g53_26    g53_27  
+  g53_28    g53_29    g53_30    g53_31    g53_32    g53_33    g53_34    g53_35    g53
+_36    g53_37    g53_38    g53_39    g53_40    g53_41    g53_42    g53_43    g53_44  
+  g53_45    g53_46    g53_47    g53_48    g53_49    g53_50    g53_51    g53_52    g53
+_53    h54_54    h54_53    h54_52    h54_51    h54_50    h54_49    h54_48    h54_47  
+  h54_46    h54_45    h54_44    h54_43    h54_42    h54_41    h54_40    h54_39    h54
+_38    h54_37    h54_36    h54_35    h54_34    h54_33    h54_32    h54_31    h54_30  
+  h54_29    h54_28    h54_27    h54_26    h54_25    h54_24    h54_23    h54_22    h54
+_21    h54_20    h54_19    h54_18    h54_17    h54_16    h54_15    h54_14    h54_13  
+  h54_12    h54_11    h54_10    h54_9    h54_8    h54_7    h54_6    h54_5    h54_4   
+ h54_3    h54_2    h54_1    g54_0    g54_1    g54_2    g54_3    g54_4    g54_5    g54
+_6    g54_7    g54_8    g54_9    g54_10    g54_11    g54_12    g54_13    g54_14    g5
+4_15    g54_16    g54_17    g54_18    g54_19    g54_20    g54_21    g54_22    g54_23 
+   g54_24    g54_25    g54_26    g54_27    g54_28    g54_29    g54_30    g54_31    g5
+4_32    g54_33    g54_34    g54_35    g54_36    g54_37    g54_38    g54_39    g54_40 
+   g54_41    g54_42    g54_43    g54_44    g54_45    g54_46    g54_47    g54_48    g5
+4_49    g54_50    g54_51    g54_52    g54_53    g54_54    h55_55    h55_54    h55_53 
+   h55_52    h55_51    h55_50    h55_49    h55_48    h55_47    h55_46    h55_45    h5
+5_44    h55_43    h55_42    h55_41    h55_40    h55_39    h55_38    h55_37    h55_36 
+   h55_35    h55_34    h55_33    h55_32    h55_31    h55_30    h55_29    h55_28    h5
+5_27    h55_26    h55_25    h55_24    h55_23    h55_22    h55_21    h55_20    h55_19 
+   h55_18    h55_17    h55_16    h55_15    h55_14    h55_13    h55_12    h55_11    h5
+5_10    h55_9    h55_8    h55_7    h55_6    h55_5    h55_4    h55_3    h55_2    h55_1
+    g55_0    g55_1    g55_2    g55_3    g55_4    g55_5    g55_6    g55_7    g55_8    
+g55_9    g55_10    g55_11    g55_12    g55_13    g55_14    g55_15    g55_16    g55_17
+    g55_18    g55_19    g55_20    g55_21    g55_22    g55_23    g55_24    g55_25    g
+55_26    g55_27    g55_28    g55_29    g55_30    g55_31    g55_32    g55_33    g55_34
+    g55_35    g55_36    g55_37    g55_38    g55_39    g55_40    g55_41    g55_42    g
+55_43    g55_44    g55_45    g55_46    g55_47    g55_48    g55_49    g55_50    g55_51
+    g55_52    g55_53    g55_54    g55_55    h56_56    h56_55    h56_54    h56_53    h
+56_52    h56_51    h56_50    h56_49    h56_48    h56_47    h56_46    h56_45    h56_44
+    h56_43    h56_42    h56_41    h56_40    h56_39    h56_38    h56_37    h56_36    h
+56_35    h56_34    h56_33    h56_32    h56_31    h56_30    h56_29    h56_28    h56_27
+    h56_26    h56_25    h56_24    h56_23    h56_22    h56_21    h56_20    h56_19    h
+56_18    h56_17    h56_16    h56_15    h56_14    h56_13    h56_12    h56_11    h56_10
+    h56_9    h56_8    h56_7    h56_6    h56_5    h56_4    h56_3    h56_2    h56_1    
+g56_0    g56_1    g56_2    g56_3    g56_4    g56_5    g56_6    g56_7    g56_8    g56_
+9    g56_10    g56_11    g56_12    g56_13    g56_14    g56_15    g56_16    g56_17    
+g56_18    g56_19    g56_20    g56_21    g56_22    g56_23    g56_24    g56_25    g56_2
+6    g56_27    g56_28    g56_29    g56_30    g56_31    g56_32    g56_33    g56_34    
+g56_35    g56_36    g56_37    g56_38    g56_39    g56_40    g56_41    g56_42    g56_4
+3    g56_44    g56_45    g56_46    g56_47    g56_48    g56_49    g56_50    g56_51    
+g56_52    g56_53    g56_54    g56_55    g56_56    h57_57    h57_56    h57_55    h57_5
+4    h57_53    h57_52    h57_51    h57_50    h57_49    h57_48    h57_47    h57_46    
+h57_45    h57_44    h57_43    h57_42    h57_41    h57_40    h57_39    h57_38    h57_3
+7    h57_36    h57_35    h57_34    h57_33    h57_32    h57_31    h57_30    h57_29    
+h57_28    h57_27    h57_26    h57_25    h57_24    h57_23    h57_22    h57_21    h57_2
+0    h57_19    h57_18    h57_17    h57_16    h57_15    h57_14    h57_13    h57_12    
+h57_11    h57_10    h57_9    h57_8    h57_7    h57_6    h57_5    h57_4    h57_3    h5
+7_2    h57_1    g57_0    g57_1    g57_2    g57_3    g57_4    g57_5    g57_6    g57_7 
+   g57_8    g57_9    g57_10    g57_11    g57_12    g57_13    g57_14    g57_15    g57_
+16    g57_17    g57_18    g57_19    g57_20    g57_21    g57_22    g57_23    g57_24   
+ g57_25    g57_26    g57_27    g57_28    g57_29    g57_30    g57_31    g57_32    g57_
+33    g57_34    g57_35    g57_36    g57_37    g57_38    g57_39    g57_40    g57_41   
+ g57_42    g57_43    g57_44    g57_45    g57_46    g57_47    g57_48    g57_49    g57_
+50    g57_51    g57_52    g57_53    g57_54    g57_55    g57_56    g57_57    h58_58   
+ h58_57    h58_56    h58_55    h58_54    h58_53    h58_52    h58_51    h58_50    h58_
+49    h58_48    h58_47    h58_46    h58_45    h58_44    h58_43    h58_42    h58_41   
+ h58_40    h58_39    h58_38    h58_37    h58_36    h58_35    h58_34    h58_33    h58_
+32    h58_31    h58_30    h58_29    h58_28    h58_27    h58_26    h58_25    h58_24   
+ h58_23    h58_22    h58_21    h58_20    h58_19    h58_18    h58_17    h58_16    h58_
+15    h58_14    h58_13    h58_12    h58_11    h58_10    h58_9    h58_8    h58_7    h5
+8_6    h58_5    h58_4    h58_3    h58_2    h58_1    g58_0    g58_1    g58_2    g58_3 
+   g58_4    g58_5    g58_6    g58_7    g58_8    g58_9    g58_10    g58_11    g58_12  
+  g58_13    g58_14    g58_15    g58_16    g58_17    g58_18    g58_19    g58_20    g58
+_21    g58_22    g58_23    g58_24    g58_25    g58_26    g58_27    g58_28    g58_29  
+  g58_30    g58_31    g58_32    g58_33    g58_34    g58_35    g58_36    g58_37    g58
+_38    g58_39    g58_40    g58_41    g58_42    g58_43    g58_44    g58_45    g58_46  
+  g58_47    g58_48    g58_49    g58_50    g58_51    g58_52    g58_53    g58_54    g58
+_55    g58_56    g58_57    g58_58    h59_59    h59_58    h59_57    h59_56    h59_55  
+  h59_54    h59_53    h59_52    h59_51    h59_50    h59_49    h59_48    h59_47    h59
+_46    h59_45    h59_44    h59_43    h59_42    h59_41    h59_40    h59_39    h59_38  
+  h59_37    h59_36    h59_35    h59_34    h59_33    h59_32    h59_31    h59_30    h59
+_29    h59_28    h59_27    h59_26    h59_25    h59_24    h59_23    h59_22    h59_21  
+  h59_20    h59_19    h59_18    h59_17    h59_16    h59_15    h59_14    h59_13    h59
+_12    h59_11    h59_10    h59_9    h59_8    h59_7    h59_6    h59_5    h59_4    h59_
+3    h59_2    h59_1    g59_0    g59_1    g59_2    g59_3    g59_4    g59_5    g59_6   
+ g59_7    g59_8    g59_9    g59_10    g59_11    g59_12    g59_13    g59_14    g59_15 
+   g59_16    g59_17    g59_18    g59_19    g59_20    g59_21    g59_22    g59_23    g5
+9_24    g59_25    g59_26    g59_27    g59_28    g59_29    g59_30    g59_31    g59_32 
+   g59_33    g59_34    g59_35    g59_36    g59_37    g59_38    g59_39    g59_40    g5
+9_41    g59_42    g59_43    g59_44    g59_45    g59_46    g59_47    g59_48    g59_49 
+   g59_50    g59_51    g59_52    g59_53    g59_54    g59_55    g59_56    g59_57    g5
+9_58    g59_59    h60_60    h60_59    h60_58    h60_57    h60_56    h60_55    h60_54 
+   h60_53    h60_52    h60_51    h60_50    h60_49    h60_48    h60_47    h60_46    h6
+0_45    h60_44    h60_43    h60_42    h60_41    h60_40    h60_39    h60_38    h60_37 
+   h60_36    h60_35    h60_34    h60_33    h60_32    h60_31    h60_30    h60_29    h6
+0_28    h60_27    h60_26    h60_25    h60_24    h60_23    h60_22    h60_21    h60_20 
+   h60_19    h60_18    h60_17    h60_16    h60_15    h60_14    h60_13    h60_12    h6
+0_11    h60_10    h60_9    h60_8    h60_7    h60_6    h60_5    h60_4    h60_3    h60_
+2    h60_1    g60_0    g60_1    g60_2    g60_3    g60_4    g60_5    g60_6    g60_7   
+ g60_8    g60_9    g60_10    g60_11    g60_12    g60_13    g60_14    g60_15    g60_16
+    g60_17    g60_18    g60_19    g60_20    g60_21    g60_22    g60_23    g60_24    g
+60_25    g60_26    g60_27    g60_28    g60_29    g60_30    g60_31    g60_32    g60_33
+    g60_34    g60_35    g60_36    g60_37    g60_38    g60_39    g60_40    g60_41    g
+60_42    g60_43    g60_44    g60_45    g60_46    g60_47    g60_48    g60_49    g60_50
+    g60_51    g60_52    g60_53    g60_54    g60_55    g60_56    g60_57    g60_58    g
+60_59    g60_60    h61_61    h61_60    h61_59    h61_58    h61_57    h61_56    h61_55
+    h61_54    h61_53    h61_52    h61_51    h61_50    h61_49    h61_48    h61_47    h
+61_46    h61_45    h61_44    h61_43    h61_42    h61_41    h61_40    h61_39    h61_38
+    h61_37    h61_36    h61_35    h61_34    h61_33    h61_32    h61_31    h61_30    h
+61_29    h61_28    h61_27    h61_26    h61_25    h61_24    h61_23    h61_22    h61_21
+    h61_20    h61_19    h61_18    h61_17    h61_16    h61_15    h61_14    h61_13    h
+61_12    h61_11    h61_10    h61_9    h61_8    h61_7    h61_6    h61_5    h61_4    h6
+1_3    h61_2    h61_1    g61_0    g61_1    g61_2    g61_3    g61_4    g61_5    g61_6 
+   g61_7    g61_8    g61_9    g61_10    g61_11    g61_12    g61_13    g61_14    g61_1
+5    g61_16    g61_17    g61_18    g61_19    g61_20    g61_21    g61_22    g61_23    
+g61_24    g61_25    g61_26    g61_27    g61_28    g61_29    g61_30    g61_31    g61_3
+2    g61_33    g61_34    g61_35    g61_36    g61_37    g61_38    g61_39    g61_40    
+g61_41    g61_42    g61_43    g61_44    g61_45    g61_46    g61_47    g61_48    g61_4
+9    g61_50    g61_51    g61_52    g61_53    g61_54    g61_55    g61_56    g61_57    
+g61_58    g61_59    g61_60    g61_61    h62_62    h62_61    h62_60    h62_59    h62_5
+8    h62_57    h62_56    h62_55    h62_54    h62_53    h62_52    h62_51    h62_50    
+h62_49    h62_48    h62_47    h62_46    h62_45    h62_44    h62_43    h62_42    h62_4
+1    h62_40    h62_39    h62_38    h62_37    h62_36    h62_35    h62_34    h62_33    
+h62_32    h62_31    h62_30    h62_29    h62_28    h62_27    h62_26    h62_25    h62_2
+4    h62_23    h62_22    h62_21    h62_20    h62_19    h62_18    h62_17    h62_16    
+h62_15    h62_14    h62_13    h62_12    h62_11    h62_10    h62_9    h62_8    h62_7  
+  h62_6    h62_5    h62_4    h62_3    h62_2    h62_1    g62_0    g62_1    g62_2    g6
+2_3    g62_4    g62_5    g62_6    g62_7    g62_8    g62_9    g62_10    g62_11    g62_
+12    g62_13    g62_14    g62_15    g62_16    g62_17    g62_18    g62_19    g62_20   
+ g62_21    g62_22    g62_23    g62_24    g62_25    g62_26    g62_27    g62_28    g62_
+29    g62_30    g62_31    g62_32    g62_33    g62_34    g62_35    g62_36    g62_37   
+ g62_38    g62_39    g62_40    g62_41    g62_42    g62_43    g62_44    g62_45    g62_
+46    g62_47    g62_48    g62_49    g62_50    g62_51    g62_52    g62_53    g62_54   
+ g62_55    g62_56    g62_57    g62_58    g62_59    g62_60    g62_61    g62_62    h63_
+63    h63_62    h63_61    h63_60    h63_59    h63_58    h63_57    h63_56    h63_55   
+ h63_54    h63_53    h63_52    h63_51    h63_50    h63_49    h63_48    h63_47    h63_
+46    h63_45    h63_44    h63_43    h63_42    h63_41    h63_40    h63_39    h63_38   
+ h63_37    h63_36    h63_35    h63_34    h63_33    h63_32    h63_31    h63_30    h63_
+29    h63_28    h63_27    h63_26    h63_25    h63_24    h63_23    h63_22    h63_21   
+ h63_20    h63_19    h63_18    h63_17    h63_16    h63_15    h63_14    h63_13    h63_
+12    h63_11    h63_10    h63_9    h63_8    h63_7    h63_6    h63_5    h63_4    h63_3
+    h63_2    h63_1    g63_0    g63_1    g63_2    g63_3    g63_4    g63_5    g63_6    
+g63_7    g63_8    g63_9    g63_10    g63_11    g63_12    g63_13    g63_14    g63_15  
+  g63_16    g63_17    g63_18    g63_19    g63_20    g63_21    g63_22    g63_23    g63
+_24    g63_25    g63_26    g63_27    g63_28    g63_29    g63_30    g63_31    g63_32  
+  g63_33    g63_34    g63_35    g63_36    g63_37    g63_38    g63_39    g63_40    g63
+_41    g63_42    g63_43    g63_44    g63_45    g63_46    g63_47    g63_48    g63_49  
+  g63_50    g63_51    g63_52    g63_53    g63_54    g63_55    g63_56    g63_57    g63
+_58    g63_59    g63_60    g63_61    g63_62    g63_63    h64_64    h64_63    h64_62  
+  h64_61    h64_60    h64_59    h64_58    h64_57    h64_56    h64_55    h64_54    h64
+_53    h64_52    h64_51    h64_50    h64_49    h64_48    h64_47    h64_46    h64_45  
+  h64_44    h64_43    h64_42    h64_41    h64_40    h64_39    h64_38    h64_37    h64
+_36    h64_35    h64_34    h64_33    h64_32    h64_31    h64_30    h64_29    h64_28  
+  h64_27    h64_26    h64_25    h64_24    h64_23    h64_22    h64_21    h64_20    h64
+_19    h64_18    h64_17    h64_16    h64_15    h64_14    h64_13    h64_12    h64_11  
+  h64_10    h64_9    h64_8    h64_7    h64_6    h64_5    h64_4    h64_3    h64_2    h
+64_1    g64_0    g64_1    g64_2    g64_3    g64_4    g64_5    g64_6    g64_7    g64_8
+    g64_9    g64_10    g64_11    g64_12    g64_13    g64_14    g64_15    g64_16    g6
+4_17    g64_18    g64_19    g64_20    g64_21    g64_22    g64_23    g64_24    g64_25 
+   g64_26    g64_27    g64_28    g64_29    g64_30    g64_31    g64_32    g64_33    g6
+4_34    g64_35    g64_36    g64_37    g64_38    g64_39    g64_40    g64_41    g64_42 
+   g64_43    g64_44    g64_45    g64_46    g64_47    g64_48    g64_49    g64_50    g6
+4_51    g64_52    g64_53    g64_54    g64_55    g64_56    g64_57    g64_58    g64_59 
+   g64_60    g64_61    g64_62    g64_63    g64_64    h65_65    h65_64    h65_63    h6
+5_62    h65_61    h65_60    h65_59    h65_58    h65_57    h65_56    h65_55    h65_54 
+   h65_53    h65_52    h65_51    h65_50    h65_49    h65_48    h65_47    h65_46    h6
+5_45    h65_44    h65_43    h65_42    h65_41    h65_40    h65_39    h65_38    h65_37 
+   h65_36    h65_35    h65_34    h65_33    h65_32    h65_31    h65_30    h65_29    h6
+5_28    h65_27    h65_26    h65_25    h65_24    h65_23    h65_22    h65_21    h65_20 
+   h65_19    h65_18    h65_17    h65_16    h65_15    h65_14    h65_13    h65_12    h6
+5_11    h65_10    h65_9    h65_8    h65_7    h65_6    h65_5    h65_4    h65_3    h65_
+2    h65_1    g65_0    g65_1    g65_2    g65_3    g65_4    g65_5    g65_6    g65_7   
+ g65_8    g65_9    g65_10    g65_11    g65_12    g65_13    g65_14    g65_15    g65_16
+    g65_17    g65_18    g65_19    g65_20    g65_21    g65_22    g65_23    g65_24    g
+65_25    g65_26    g65_27    g65_28    g65_29    g65_30    g65_31    g65_32    g65_33
+    g65_34    g65_35    g65_36    g65_37    g65_38    g65_39    g65_40    g65_41    g
+65_42    g65_43    g65_44    g65_45    g65_46    g65_47    g65_48    g65_49    g65_50
+    g65_51    g65_52    g65_53    g65_54    g65_55    g65_56    g65_57    g65_58    g
+65_59    g65_60    g65_61    g65_62    g65_63    g65_64    g65_65    h66_66    h66_65
+    h66_64    h66_63    h66_62    h66_61    h66_60    h66_59    h66_58    h66_57    h
+66_56    h66_55    h66_54    h66_53    h66_52    h66_51    h66_50    h66_49    h66_48
+    h66_47    h66_46    h66_45    h66_44    h66_43    h66_42    h66_41    h66_40    h
+66_39    h66_38    h66_37    h66_36    h66_35    h66_34    h66_33    h66_32    h66_31
+    h66_30    h66_29    h66_28    h66_27    h66_26    h66_25    h66_24    h66_23    h
+66_22    h66_21    h66_20    h66_19    h66_18    h66_17    h66_16    h66_15    h66_14
+    h66_13    h66_12    h66_11    h66_10    h66_9    h66_8    h66_7    h66_6    h66_5
+    h66_4    h66_3    h66_2    h66_1    g66_0    g66_1    g66_2    g66_3    g66_4    
+g66_5    g66_6    g66_7    g66_8    g66_9    g66_10    g66_11    g66_12    g66_13    
+g66_14    g66_15    g66_16    g66_17    g66_18    g66_19    g66_20    g66_21    g66_2
+2    g66_23    g66_24    g66_25    g66_26    g66_27    g66_28    g66_29    g66_30    
+g66_31    g66_32    g66_33    g66_34    g66_35    g66_36    g66_37    g66_38    g66_3
+9    g66_40    g66_41    g66_42    g66_43    g66_44    g66_45    g66_46    g66_47    
+g66_48    g66_49    g66_50    g66_51    g66_52    g66_53    g66_54    g66_55    g66_5
+6    g66_57    g66_58    g66_59    g66_60    g66_61    g66_62    g66_63    g66_64    
+g66_65    g66_66    h67_67    h67_66    h67_65    h67_64    h67_63    h67_62    h67_6
+1    h67_60    h67_59    h67_58    h67_57    h67_56    h67_55    h67_54    h67_53    
+h67_52    h67_51    h67_50    h67_49    h67_48    h67_47    h67_46    h67_45    h67_4
+4    h67_43    h67_42    h67_41    h67_40    h67_39    h67_38    h67_37    h67_36    
+h67_35    h67_34    h67_33    h67_32    h67_31    h67_30    h67_29    h67_28    h67_2
+7    h67_26    h67_25    h67_24    h67_23    h67_22    h67_21    h67_20    h67_19    
+h67_18    h67_17    h67_16    h67_15    h67_14    h67_13    h67_12    h67_11    h67_1
+0    h67_9    h67_8    h67_7    h67_6    h67_5    h67_4    h67_3    h67_2    h67_1   
+ g67_0    g67_1    g67_2    g67_3    g67_4    g67_5    g67_6    g67_7    g67_8    g67
+_9    g67_10    g67_11    g67_12    g67_13    g67_14    g67_15    g67_16    g67_17   
+ g67_18    g67_19    g67_20    g67_21    g67_22    g67_23    g67_24    g67_25    g67_
+26    g67_27    g67_28    g67_29    g67_30    g67_31    g67_32    g67_33    g67_34   
+ g67_35    g67_36    g67_37    g67_38    g67_39    g67_40    g67_41    g67_42    g67_
+43    g67_44    g67_45    g67_46    g67_47    g67_48    g67_49    g67_50    g67_51   
+ g67_52    g67_53    g67_54    g67_55    g67_56    g67_57    g67_58    g67_59    g67_
+60    g67_61    g67_62    g67_63    g67_64    g67_65    g67_66    g67_67    h68_68   
+ h68_67    h68_66    h68_65    h68_64    h68_63    h68_62    h68_61    h68_60    h68_
+59    h68_58    h68_57    h68_56    h68_55    h68_54    h68_53    h68_52    h68_51   
+ h68_50    h68_49    h68_48    h68_47    h68_46    h68_45    h68_44    h68_43    h68_
+42    h68_41    h68_40    h68_39    h68_38    h68_37    h68_36    h68_35    h68_34   
+ h68_33    h68_32    h68_31    h68_30    h68_29    h68_28    h68_27    h68_26    h68_
+25    h68_24    h68_23    h68_22    h68_21    h68_20    h68_19    h68_18    h68_17   
+ h68_16    h68_15    h68_14    h68_13    h68_12    h68_11    h68_10    h68_9    h68_8
+    h68_7    h68_6    h68_5    h68_4    h68_3    h68_2    h68_1    g68_0    g68_1    
+g68_2    g68_3    g68_4    g68_5    g68_6    g68_7    g68_8    g68_9    g68_10    g68
+_11    g68_12    g68_13    g68_14    g68_15    g68_16    g68_17    g68_18    g68_19  
+  g68_20    g68_21    g68_22    g68_23    g68_24    g68_25    g68_26    g68_27    g68
+_28    g68_29    g68_30    g68_31    g68_32    g68_33    g68_34    g68_35    g68_36  
+  g68_37    g68_38    g68_39    g68_40    g68_41    g68_42    g68_43    g68_44    g68
+_45    g68_46    g68_47    g68_48    g68_49    g68_50    g68_51    g68_52    g68_53  
+  g68_54    g68_55    g68_56    g68_57    g68_58    g68_59    g68_60    g68_61    g68
+_62    g68_63    g68_64    g68_65    g68_66    g68_67    g68_68    h69_69    h69_68  
+  h69_67    h69_66    h69_65    h69_64    h69_63    h69_62    h69_61    h69_60    h69
+_59    h69_58    h69_57    h69_56    h69_55    h69_54    h69_53    h69_52    h69_51  
+  h69_50    h69_49    h69_48    h69_47    h69_46    h69_45    h69_44    h69_43    h69
+_42    h69_41    h69_40    h69_39    h69_38    h69_37    h69_36    h69_35    h69_34  
+  h69_33    h69_32    h69_31    h69_30    h69_29    h69_28    h69_27    h69_26    h69
+_25    h69_24    h69_23    h69_22    h69_21    h69_20    h69_19    h69_18    h69_17  
+  h69_16    h69_15    h69_14    h69_13    h69_12    h69_11    h69_10    h69_9    h69_
+8    h69_7    h69_6    h69_5    h69_4    h69_3    h69_2    h69_1    g69_0    g69_1   
+ g69_2    g69_3    g69_4    g69_5    g69_6    g69_7    g69_8    g69_9    g69_10    g6
+9_11    g69_12    g69_13    g69_14    g69_15    g69_16    g69_17    g69_18    g69_19 
+   g69_20    g69_21    g69_22    g69_23    g69_24    g69_25    g69_26    g69_27    g6
+9_28    g69_29    g69_30    g69_31    g69_32    g69_33    g69_34    g69_35    g69_36 
+   g69_37    g69_38    g69_39    g69_40    g69_41    g69_42    g69_43    g69_44    g6
+9_45    g69_46    g69_47    g69_48    g69_49    g69_50    g69_51    g69_52    g69_53 
+   g69_54    g69_55    g69_56    g69_57    g69_58    g69_59    g69_60    g69_61    g6
+9_62    g69_63    g69_64    g69_65    g69_66    g69_67    g69_68    g69_69    h70_70 
+   h70_69    h70_68    h70_67    h70_66    h70_65    h70_64    h70_63    h70_62    h7
+0_61    h70_60    h70_59    h70_58    h70_57    h70_56    h70_55    h70_54    h70_53 
+   h70_52    h70_51    h70_50    h70_49    h70_48    h70_47    h70_46    h70_45    h7
+0_44    h70_43    h70_42    h70_41    h70_40    h70_39    h70_38    h70_37    h70_36 
+   h70_35    h70_34    h70_33    h70_32    h70_31    h70_30    h70_29    h70_28    h7
+0_27    h70_26    h70_25    h70_24    h70_23    h70_22    h70_21    h70_20    h70_19 
+   h70_18    h70_17    h70_16    h70_15    h70_14    h70_13    h70_12    h70_11    h7
+0_10    h70_9    h70_8    h70_7    h70_6    h70_5    h70_4    h70_3    h70_2    h70_1
+    g70_0    g70_1    g70_2    g70_3    g70_4    g70_5    g70_6    g70_7    g70_8    
+g70_9    g70_10    g70_11    g70_12    g70_13    g70_14    g70_15    g70_16    g70_17
+    g70_18    g70_19    g70_20    g70_21    g70_22    g70_23    g70_24    g70_25    g
+70_26    g70_27    g70_28    g70_29    g70_30    g70_31    g70_32    g70_33    g70_34
+    g70_35    g70_36    g70_37    g70_38    g70_39    g70_40    g70_41    g70_42    g
+70_43    g70_44    g70_45    g70_46    g70_47    g70_48    g70_49    g70_50    g70_51
+    g70_52    g70_53    g70_54    g70_55    g70_56    g70_57    g70_58    g70_59    g
+70_60    g70_61    g70_62    g70_63    g70_64    g70_65    g70_66    g70_67    g70_68
+    g70_69    g70_70    h71_71    h71_70    h71_69    h71_68    h71_67    h71_66    h
+71_65    h71_64    h71_63    h71_62    h71_61    h71_60    h71_59    h71_58    h71_57
+    h71_56    h71_55    h71_54    h71_53    h71_52    h71_51    h71_50    h71_49    h
+71_48    h71_47    h71_46    h71_45    h71_44    h71_43    h71_42    h71_41    h71_40
+    h71_39    h71_38    h71_37    h71_36    h71_35    h71_34    h71_33    h71_32    h
+71_31    h71_30    h71_29    h71_28    h71_27    h71_26    h71_25    h71_24    h71_23
+    h71_22    h71_21    h71_20    h71_19    h71_18    h71_17    h71_16    h71_15    h
+71_14    h71_13    h71_12    h71_11    h71_10    h71_9    h71_8    h71_7    h71_6    
+h71_5    h71_4    h71_3    h71_2    h71_1    g71_0    g71_1    g71_2    g71_3    g71_
+4    g71_5    g71_6    g71_7    g71_8    g71_9    g71_10    g71_11    g71_12    g71_1
+3    g71_14    g71_15    g71_16    g71_17    g71_18    g71_19    g71_20    g71_21    
+g71_22    g71_23    g71_24    g71_25    g71_26    g71_27    g71_28    g71_29    g71_3
+0    g71_31    g71_32    g71_33    g71_34    g71_35    g71_36    g71_37    g71_38    
+g71_39    g71_40    g71_41    g71_42    g71_43    g71_44    g71_45    g71_46    g71_4
+7    g71_48    g71_49    g71_50    g71_51    g71_52    g71_53    g71_54    g71_55    
+g71_56    g71_57    g71_58    g71_59    g71_60    g71_61    g71_62    g71_63    g71_6
+4    g71_65    g71_66    g71_67    g71_68    g71_69    g71_70    g71_71    h72_72    
+h72_71    h72_70    h72_69    h72_68    h72_67    h72_66    h72_65    h72_64    h72_6
+3    h72_62    h72_61    h72_60    h72_59    h72_58    h72_57    h72_56    h72_55    
+h72_54    h72_53    h72_52    h72_51    h72_50    h72_49    h72_48    h72_47    h72_4
+6    h72_45    h72_44    h72_43    h72_42    h72_41    h72_40    h72_39    h72_38    
+h72_37    h72_36    h72_35    h72_34    h72_33    h72_32    h72_31    h72_30    h72_2
+9    h72_28    h72_27    h72_26    h72_25    h72_24    h72_23    h72_22    h72_21    
+h72_20    h72_19    h72_18    h72_17    h72_16    h72_15    h72_14    h72_13    h72_1
+2    h72_11    h72_10    h72_9    h72_8    h72_7    h72_6    h72_5    h72_4    h72_3 
+   h72_2    h72_1    g72_0    g72_1    g72_2    g72_3    g72_4    g72_5    g72_6    g
+72_7    g72_8    g72_9    g72_10    g72_11    g72_12    g72_13    g72_14    g72_15   
+ g72_16    g72_17    g72_18    g72_19    g72_20    g72_21    g72_22    g72_23    g72_
+24    g72_25    g72_26    g72_27    g72_28    g72_29    g72_30    g72_31    g72_32   
+ g72_33    g72_34    g72_35    g72_36    g72_37    g72_38    g72_39    g72_40    g72_
+41    g72_42    g72_43    g72_44    g72_45    g72_46    g72_47    g72_48    g72_49   
+ g72_50    g72_51    g72_52    g72_53    g72_54    g72_55    g72_56    g72_57    g72_
+58    g72_59    g72_60    g72_61    g72_62    g72_63    g72_64    g72_65    g72_66   
+ g72_67    g72_68    g72_69    g72_70    g72_71    g72_72    h73_73    h73_72    h73_
+71    h73_70    h73_69    h73_68    h73_67    h73_66    h73_65    h73_64    h73_63   
+ h73_62    h73_61    h73_60    h73_59    h73_58    h73_57    h73_56    h73_55    h73_
+54    h73_53    h73_52    h73_51    h73_50    h73_49    h73_48    h73_47    h73_46   
+ h73_45    h73_44    h73_43    h73_42    h73_41    h73_40    h73_39    h73_38    h73_
+37    h73_36    h73_35    h73_34    h73_33    h73_32    h73_31    h73_30    h73_29   
+ h73_28    h73_27    h73_26    h73_25    h73_24    h73_23    h73_22    h73_21    h73_
+20    h73_19    h73_18    h73_17    h73_16    h73_15    h73_14    h73_13    h73_12   
+ h73_11    h73_10    h73_9    h73_8    h73_7    h73_6    h73_5    h73_4    h73_3    h
+73_2    h73_1    g73_0    g73_1    g73_2    g73_3    g73_4    g73_5    g73_6    g73_7
+    g73_8    g73_9    g73_10    g73_11    g73_12    g73_13    g73_14    g73_15    g73
+_16    g73_17    g73_18    g73_19    g73_20    g73_21    g73_22    g73_23    g73_24  
+  g73_25    g73_26    g73_27    g73_28    g73_29    g73_30    g73_31    g73_32    g73
+_33    g73_34    g73_35    g73_36    g73_37    g73_38    g73_39    g73_40    g73_41  
+  g73_42    g73_43    g73_44    g73_45    g73_46    g73_47    g73_48    g73_49    g73
+_50    g73_51    g73_52    g73_53    g73_54    g73_55    g73_56    g73_57    g73_58  
+  g73_59    g73_60    g73_61    g73_62    g73_63    g73_64    g73_65    g73_66    g73
+_67    g73_68    g73_69    g73_70    g73_71    g73_72    g73_73    h74_74    h74_73  
+  h74_72    h74_71    h74_70    h74_69    h74_68    h74_67    h74_66    h74_65    h74
+_64    h74_63    h74_62    h74_61    h74_60    h74_59    h74_58    h74_57    h74_56  
+  h74_55    h74_54    h74_53    h74_52    h74_51    h74_50    h74_49    h74_48    h74
+_47    h74_46    h74_45    h74_44    h74_43    h74_42    h74_41    h74_40    h74_39  
+  h74_38    h74_37    h74_36    h74_35    h74_34    h74_33    h74_32    h74_31    h74
+_30    h74_29    h74_28    h74_27    h74_26    h74_25    h74_24    h74_23    h74_22  
+  h74_21    h74_20    h74_19    h74_18    h74_17    h74_16    h74_15    h74_14    h74
+_13    h74_12    h74_11    h74_10    h74_9    h74_8    h74_7    h74_6    h74_5    h74
+_4    h74_3    h74_2    h74_1    g74_0    g74_1    g74_2    g74_3    g74_4    g74_5  
+  g74_6    g74_7    g74_8    g74_9    g74_10    g74_11    g74_12    g74_13    g74_14 
+   g74_15    g74_16    g74_17    g74_18    g74_19    g74_20    g74_21    g74_22    g7
+4_23    g74_24    g74_25    g74_26    g74_27    g74_28    g74_29    g74_30    g74_31 
+   g74_32    g74_33    g74_34    g74_35    g74_36    g74_37    g74_38    g74_39    g7
+4_40    g74_41    g74_42    g74_43    g74_44    g74_45    g74_46    g74_47    g74_48 
+   g74_49    g74_50    g74_51    g74_52    g74_53    g74_54    g74_55    g74_56    g7
+4_57    g74_58    g74_59    g74_60    g74_61    g74_62    g74_63    g74_64    g74_65 
+   g74_66    g74_67    g74_68    g74_69    g74_70    g74_71    g74_72    g74_73    g7
+4_74    h75_75    h75_74    h75_73    h75_72    h75_71    h75_70    h75_69    h75_68 
+   h75_67    h75_66    h75_65    h75_64    h75_63    h75_62    h75_61    h75_60    h7
+5_59    h75_58    h75_57    h75_56    h75_55    h75_54    h75_53    h75_52    h75_51 
+   h75_50    h75_49    h75_48    h75_47    h75_46    h75_45    h75_44    h75_43    h7
+5_42    h75_41    h75_40    h75_39    h75_38    h75_37    h75_36    h75_35    h75_34 
+   h75_33    h75_32    h75_31    h75_30    h75_29    h75_28    h75_27    h75_26    h7
+5_25    h75_24    h75_23    h75_22    h75_21    h75_20    h75_19    h75_18    h75_17 
+   h75_16    h75_15    h75_14    h75_13    h75_12    h75_11    h75_10    h75_9    h75
+_8    h75_7    h75_6    h75_5    h75_4    h75_3    h75_2    h75_1    g75_0    g75_1  
+  g75_2    g75_3    g75_4    g75_5    g75_6    g75_7    g75_8    g75_9    g75_10    g
+75_11    g75_12    g75_13    g75_14    g75_15    g75_16    g75_17    g75_18    g75_19
+    g75_20    g75_21    g75_22    g75_23    g75_24    g75_25    g75_26    g75_27    g
+75_28    g75_29    g75_30    g75_31    g75_32    g75_33    g75_34    g75_35    g75_36
+    g75_37    g75_38    g75_39    g75_40    g75_41    g75_42    g75_43    g75_44    g
+75_45    g75_46    g75_47    g75_48    g75_49    g75_50    g75_51    g75_52    g75_53
+    g75_54    g75_55    g75_56    g75_57    g75_58    g75_59    g75_60    g75_61    g
+75_62    g75_63    g75_64    g75_65    g75_66    g75_67    g75_68    g75_69    g75_70
+    g75_71    g75_72    g75_73    g75_74    g75_75    h76_76    h76_75    h76_74    h
+76_73    h76_72    h76_71    h76_70    h76_69    h76_68    h76_67    h76_66    h76_65
+    h76_64    h76_63    h76_62    h76_61    h76_60    h76_59    h76_58    h76_57    h
+76_56    h76_55    h76_54    h76_53    h76_52    h76_51    h76_50    h76_49    h76_48
+    h76_47    h76_46    h76_45    h76_44    h76_43    h76_42    h76_41    h76_40    h
+76_39    h76_38    h76_37    h76_36    h76_35    h76_34    h76_33    h76_32    h76_31
+    h76_30    h76_29    h76_28    h76_27    h76_26    h76_25    h76_24    h76_23    h
+76_22    h76_21    h76_20    h76_19    h76_18    h76_17    h76_16    h76_15    h76_14
+    h76_13    h76_12    h76_11    h76_10    h76_9    h76_8    h76_7    h76_6    h76_5
+    h76_4    h76_3    h76_2    h76_1    g76_0    g76_1    g76_2    g76_3    g76_4    
+g76_5    g76_6    g76_7    g76_8    g76_9    g76_10    g76_11    g76_12    g76_13    
+g76_14    g76_15    g76_16    g76_17    g76_18    g76_19    g76_20    g76_21    g76_2
+2    g76_23    g76_24    g76_25    g76_26    g76_27    g76_28    g76_29    g76_30    
+g76_31    g76_32    g76_33    g76_34    g76_35    g76_36    g76_37    g76_38    g76_3
+9    g76_40    g76_41    g76_42    g76_43    g76_44    g76_45    g76_46    g76_47    
+g76_48    g76_49    g76_50    g76_51    g76_52    g76_53    g76_54    g76_55    g76_5
+6    g76_57    g76_58    g76_59    g76_60    g76_61    g76_62    g76_63    g76_64    
+g76_65    g76_66    g76_67    g76_68    g76_69    g76_70    g76_71    g76_72    g76_7
+3    g76_74    g76_75    g76_76    h77_77    h77_76    h77_75    h77_74    h77_73    
+h77_72    h77_71    h77_70    h77_69    h77_68    h77_67    h77_66    h77_65    h77_6
+4    h77_63    h77_62    h77_61    h77_60    h77_59    h77_58    h77_57    h77_56    
+h77_55    h77_54    h77_53    h77_52    h77_51    h77_50    h77_49    h77_48    h77_4
+7    h77_46    h77_45    h77_44    h77_43    h77_42    h77_41    h77_40    h77_39    
+h77_38    h77_37    h77_36    h77_35    h77_34    h77_33    h77_32    h77_31    h77_3
+0    h77_29    h77_28    h77_27    h77_26    h77_25    h77_24    h77_23    h77_22    
+h77_21    h77_20    h77_19    h77_18    h77_17    h77_16    h77_15    h77_14    h77_1
+3    h77_12    h77_11    h77_10    h77_9    h77_8    h77_7    h77_6    h77_5    h77_4
+    h77_3    h77_2    h77_1    g77_0    g77_1    g77_2    g77_3    g77_4    g77_5    
+g77_6    g77_7    g77_8    g77_9    g77_10    g77_11    g77_12    g77_13    g77_14   
+ g77_15    g77_16    g77_17    g77_18    g77_19    g77_20    g77_21    g77_22    g77_
+23    g77_24    g77_25    g77_26    g77_27    g77_28    g77_29    g77_30    g77_31   
+ g77_32    g77_33    g77_34    g77_35    g77_36    g77_37    g77_38    g77_39    g77_
+40    g77_41    g77_42    g77_43    g77_44    g77_45    g77_46    g77_47    g77_48   
+ g77_49    g77_50    g77_51    g77_52    g77_53    g77_54    g77_55    g77_56    g77_
+57    g77_58    g77_59    g77_60    g77_61    g77_62    g77_63    g77_64    g77_65   
+ g77_66    g77_67    g77_68    g77_69    g77_70    g77_71    g77_72    g77_73    g77_
+74    g77_75    g77_76    g77_77    h78_78    h78_77    h78_76    h78_75    h78_74   
+ h78_73    h78_72    h78_71    h78_70    h78_69    h78_68    h78_67    h78_66    h78_
+65    h78_64    h78_63    h78_62    h78_61    h78_60    h78_59    h78_58    h78_57   
+ h78_56    h78_55    h78_54    h78_53    h78_52    h78_51    h78_50    h78_49    h78_
+48    h78_47    h78_46    h78_45    h78_44    h78_43    h78_42    h78_41    h78_40   
+ h78_39    h78_38    h78_37    h78_36    h78_35    h78_34    h78_33    h78_32    h78_
+31    h78_30    h78_29    h78_28    h78_27    h78_26    h78_25    h78_24    h78_23   
+ h78_22    h78_21    h78_20    h78_19    h78_18    h78_17    h78_16    h78_15    h78_
+14    h78_13    h78_12    h78_11    h78_10    h78_9    h78_8    h78_7    h78_6    h78
+_5    h78_4    h78_3    h78_2    h78_1    g78_0    g78_1    g78_2    g78_3    g78_4  
+  g78_5    g78_6    g78_7    g78_8    g78_9    g78_10    g78_11    g78_12    g78_13  
+  g78_14    g78_15    g78_16    g78_17    g78_18    g78_19    g78_20    g78_21    g78
+_22    g78_23    g78_24    g78_25    g78_26    g78_27    g78_28    g78_29    g78_30  
+  g78_31    g78_32    g78_33    g78_34    g78_35    g78_36    g78_37    g78_38    g78
+_39    g78_40    g78_41    g78_42    g78_43    g78_44    g78_45    g78_46    g78_47  
+  g78_48    g78_49    g78_50    g78_51    g78_52    g78_53    g78_54    g78_55    g78
+_56    g78_57    g78_58    g78_59    g78_60    g78_61    g78_62    g78_63    g78_64  
+  g78_65    g78_66    g78_67    g78_68    g78_69    g78_70    g78_71    g78_72    g78
+_73    g78_74    g78_75    g78_76    g78_77    g78_78    h79_79    h79_78    h79_77  
+  h79_76    h79_75    h79_74    h79_73    h79_72    h79_71    h79_70    h79_69    h79
+_68    h79_67    h79_66    h79_65    h79_64    h79_63    h79_62    h79_61    h79_60  
+  h79_59    h79_58    h79_57    h79_56    h79_55    h79_54    h79_53    h79_52    h79
+_51    h79_50    h79_49    h79_48    h79_47    h79_46    h79_45    h79_44    h79_43  
+  h79_42    h79_41    h79_40    h79_39    h79_38    h79_37    h79_36    h79_35    h79
+_34    h79_33    h79_32    h79_31    h79_30    h79_29    h79_28    h79_27    h79_26  
+  h79_25    h79_24    h79_23    h79_22    h79_21    h79_20    h79_19    h79_18    h79
+_17    h79_16    h79_15    h79_14    h79_13    h79_12    h79_11    h79_10    h79_9   
+ h79_8    h79_7    h79_6    h79_5    h79_4    h79_3    h79_2    h79_1    g79_0    g79
+_1    g79_2    g79_3    g79_4    g79_5    g79_6    g79_7    g79_8    g79_9    g79_10 
+   g79_11    g79_12    g79_13    g79_14    g79_15    g79_16    g79_17    g79_18    g7
+9_19    g79_20    g79_21    g79_22    g79_23    g79_24    g79_25    g79_26    g79_27 
+   g79_28    g79_29    g79_30    g79_31    g79_32    g79_33    g79_34    g79_35    g7
+9_36    g79_37    g79_38    g79_39    g79_40    g79_41    g79_42    g79_43    g79_44 
+   g79_45    g79_46    g79_47    g79_48    g79_49    g79_50    g79_51    g79_52    g7
+9_53    g79_54    g79_55    g79_56    g79_57    g79_58    g79_59    g79_60    g79_61 
+   g79_62    g79_63    g79_64    g79_65    g79_66    g79_67    g79_68    g79_69    g7
+9_70    g79_71    g79_72    g79_73    g79_74    g79_75    g79_76    g79_77    g79_78 
+   g79_79    h80_80    h80_79    h80_78    h80_77    h80_76    h80_75    h80_74    h8
+0_73    h80_72    h80_71    h80_70    h80_69    h80_68    h80_67    h80_66    h80_65 
+   h80_64    h80_63    h80_62    h80_61    h80_60    h80_59    h80_58    h80_57    h8
+0_56    h80_55    h80_54    h80_53    h80_52    h80_51    h80_50    h80_49    h80_48 
+   h80_47    h80_46    h80_45    h80_44    h80_43    h80_42    h80_41    h80_40    h8
+0_39    h80_38    h80_37    h80_36    h80_35    h80_34    h80_33    h80_32    h80_31 
+   h80_30    h80_29    h80_28    h80_27    h80_26    h80_25    h80_24    h80_23    h8
+0_22    h80_21    h80_20    h80_19    h80_18    h80_17    h80_16    h80_15    h80_14 
+   h80_13    h80_12    h80_11    h80_10    h80_9    h80_8    h80_7    h80_6    h80_5 
+   h80_4    h80_3    h80_2    h80_1    g80_0    g80_1    g80_2    g80_3    g80_4    g
+80_5    g80_6    g80_7    g80_8    g80_9    g80_10    g80_11    g80_12    g80_13    g
+80_14    g80_15    g80_16    g80_17    g80_18    g80_19    g80_20    g80_21    g80_22
+    g80_23    g80_24    g80_25    g80_26    g80_27    g80_28    g80_29    g80_30    g
+80_31    g80_32    g80_33    g80_34    g80_35    g80_36    g80_37    g80_38    g80_39
+    g80_40    g80_41    g80_42    g80_43    g80_44    g80_45    g80_46    g80_47    g
+80_48    g80_49    g80_50    g80_51    g80_52    g80_53    g80_54    g80_55    g80_56
+    g80_57    g80_58    g80_59    g80_60    g80_61    g80_62    g80_63    g80_64    g
+80_65    g80_66    g80_67    g80_68    g80_69    g80_70    g80_71    g80_72    g80_73
+    g80_74    g80_75    g80_76    g80_77    g80_78    g80_79    g80_80    h81_81    h
+81_80    h81_79    h81_78    h81_77    h81_76    h81_75    h81_74    h81_73    h81_72
+    h81_71    h81_70    h81_69    h81_68    h81_67    h81_66    h81_65    h81_64    h
+81_63    h81_62    h81_61    h81_60    h81_59    h81_58    h81_57    h81_56    h81_55
+    h81_54    h81_53    h81_52    h81_51    h81_50    h81_49    h81_48    h81_47    h
+81_46    h81_45    h81_44    h81_43    h81_42    h81_41    h81_40    h81_39    h81_38
+    h81_37    h81_36    h81_35    h81_34    h81_33    h81_32    h81_31    h81_30    h
+81_29    h81_28    h81_27    h81_26    h81_25    h81_24    h81_23    h81_22    h81_21
+    h81_20    h81_19    h81_18    h81_17    h81_16    h81_15    h81_14    h81_13    h
+81_12    h81_11    h81_10    h81_9    h81_8    h81_7    h81_6    h81_5    h81_4    h8
+1_3    h81_2    h81_1    g81_0    g81_1    g81_2    g81_3    g81_4    g81_5    g81_6 
+   g81_7    g81_8    g81_9    g81_10    g81_11    g81_12    g81_13    g81_14    g81_1
+5    g81_16    g81_17    g81_18    g81_19    g81_20    g81_21    g81_22    g81_23    
+g81_24    g81_25    g81_26    g81_27    g81_28    g81_29    g81_30    g81_31    g81_3
+2    g81_33    g81_34    g81_35    g81_36    g81_37    g81_38    g81_39    g81_40    
+g81_41    g81_42    g81_43    g81_44    g81_45    g81_46    g81_47    g81_48    g81_4
+9    g81_50    g81_51    g81_52    g81_53    g81_54    g81_55    g81_56    g81_57    
+g81_58    g81_59    g81_60    g81_61    g81_62    g81_63    g81_64    g81_65    g81_6
+6    g81_67    g81_68    g81_69    g81_70    g81_71    g81_72    g81_73    g81_74    
+g81_75    g81_76    g81_77    g81_78    g81_79    g81_80    g81_81    h82_82    h82_8
+1    h82_80    h82_79    h82_78    h82_77    h82_76    h82_75    h82_74    h82_73    
+h82_72    h82_71    h82_70    h82_69    h82_68    h82_67    h82_66    h82_65    h82_6
+4    h82_63    h82_62    h82_61    h82_60    h82_59    h82_58    h82_57    h82_56    
+h82_55    h82_54    h82_53    h82_52    h82_51    h82_50    h82_49    h82_48    h82_4
+7    h82_46    h82_45    h82_44    h82_43    h82_42    h82_41    h82_40    h82_39    
+h82_38    h82_37    h82_36    h82_35    h82_34    h82_33    h82_32    h82_31    h82_3
+0    h82_29    h82_28    h82_27    h82_26    h82_25    h82_24    h82_23    h82_22    
+h82_21    h82_20    h82_19    h82_18    h82_17    h82_16    h82_15    h82_14    h82_1
+3    h82_12    h82_11    h82_10    h82_9    h82_8    h82_7    h82_6    h82_5    h82_4
+    h82_3    h82_2    h82_1    g82_0    g82_1    g82_2    g82_3    g82_4    g82_5    
+g82_6    g82_7    g82_8    g82_9    g82_10    g82_11    g82_12    g82_13    g82_14   
+ g82_15    g82_16    g82_17    g82_18    g82_19    g82_20    g82_21    g82_22    g82_
+23    g82_24    g82_25    g82_26    g82_27    g82_28    g82_29    g82_30    g82_31   
+ g82_32    g82_33    g82_34    g82_35    g82_36    g82_37    g82_38    g82_39    g82_
+40    g82_41    g82_42    g82_43    g82_44    g82_45    g82_46    g82_47    g82_48   
+ g82_49    g82_50    g82_51    g82_52    g82_53    g82_54    g82_55    g82_56    g82_
+57    g82_58    g82_59    g82_60    g82_61    g82_62    g82_63    g82_64    g82_65   
+ g82_66    g82_67    g82_68    g82_69    g82_70    g82_71    g82_72    g82_73    g82_
+74    g82_75    g82_76    g82_77    g82_78    g82_79    g82_80    g82_81    g82_82   
+ h83_83    h83_82    h83_81    h83_80    h83_79    h83_78    h83_77    h83_76    h83_
+75    h83_74    h83_73    h83_72    h83_71    h83_70    h83_69    h83_68    h83_67   
+ h83_66    h83_65    h83_64    h83_63    h83_62    h83_61    h83_60    h83_59    h83_
+58    h83_57    h83_56    h83_55    h83_54    h83_53    h83_52    h83_51    h83_50   
+ h83_49    h83_48    h83_47    h83_46    h83_45    h83_44    h83_43    h83_42    h83_
+41    h83_40    h83_39    h83_38    h83_37    h83_36    h83_35    h83_34    h83_33   
+ h83_32    h83_31    h83_30    h83_29    h83_28    h83_27    h83_26    h83_25    h83_
+24    h83_23    h83_22    h83_21    h83_20    h83_19    h83_18    h83_17    h83_16   
+ h83_15    h83_14    h83_13    h83_12    h83_11    h83_10    h83_9    h83_8    h83_7 
+   h83_6    h83_5    h83_4    h83_3    h83_2    h83_1    g83_0    g83_1    g83_2    g
+83_3    g83_4    g83_5    g83_6    g83_7    g83_8    g83_9    g83_10    g83_11    g83
+_12    g83_13    g83_14    g83_15    g83_16    g83_17    g83_18    g83_19    g83_20  
+  g83_21    g83_22    g83_23    g83_24    g83_25    g83_26    g83_27    g83_28    g83
+_29    g83_30    g83_31    g83_32    g83_33    g83_34    g83_35    g83_36    g83_37  
+  g83_38    g83_39    g83_40    g83_41    g83_42    g83_43    g83_44    g83_45    g83
+_46    g83_47    g83_48    g83_49    g83_50    g83_51    g83_52    g83_53    g83_54  
+  g83_55    g83_56    g83_57    g83_58    g83_59    g83_60    g83_61    g83_62    g83
+_63    g83_64    g83_65    g83_66    g83_67    g83_68    g83_69    g83_70    g83_71  
+  g83_72    g83_73    g83_74    g83_75    g83_76    g83_77    g83_78    g83_79    g83
+_80    g83_81    g83_82    g83_83    h84_84    h84_83    h84_82    h84_81    h84_80  
+  h84_79    h84_78    h84_77    h84_76    h84_75    h84_74    h84_73    h84_72    h84
+_71    h84_70    h84_69    h84_68    h84_67    h84_66    h84_65    h84_64    h84_63  
+  h84_62    h84_61    h84_60    h84_59    h84_58    h84_57    h84_56    h84_55    h84
+_54    h84_53    h84_52    h84_51    h84_50    h84_49    h84_48    h84_47    h84_46  
+  h84_45    h84_44    h84_43    h84_42    h84_41    h84_40    h84_39    h84_38    h84
+_37    h84_36    h84_35    h84_34    h84_33    h84_32    h84_31    h84_30    h84_29  
+  h84_28    h84_27    h84_26    h84_25    h84_24    h84_23    h84_22    h84_21    h84
+_20    h84_19    h84_18    h84_17    h84_16    h84_15    h84_14    h84_13    h84_12  
+  h84_11    h84_10    h84_9    h84_8    h84_7    h84_6    h84_5    h84_4    h84_3    
+h84_2    h84_1    g84_0    g84_1    g84_2    g84_3    g84_4    g84_5    g84_6    g84_
+7    g84_8    g84_9    g84_10    g84_11    g84_12    g84_13    g84_14    g84_15    g8
+4_16    g84_17    g84_18    g84_19    g84_20    g84_21    g84_22    g84_23    g84_24 
+   g84_25    g84_26    g84_27    g84_28    g84_29    g84_30    g84_31    g84_32    g8
+4_33    g84_34    g84_35    g84_36    g84_37    g84_38    g84_39    g84_40    g84_41 
+   g84_42    g84_43    g84_44    g84_45    g84_46    g84_47    g84_48    g84_49    g8
+4_50    g84_51    g84_52    g84_53    g84_54    g84_55    g84_56    g84_57    g84_58 
+   g84_59    g84_60    g84_61    g84_62    g84_63    g84_64    g84_65    g84_66    g8
+4_67    g84_68    g84_69    g84_70    g84_71    g84_72    g84_73    g84_74    g84_75 
+   g84_76    g84_77    g84_78    g84_79    g84_80    g84_81    g84_82    g84_83    g8
+4_84    h85_85    h85_84    h85_83    h85_82    h85_81    h85_80    h85_79    h85_78 
+   h85_77    h85_76    h85_75    h85_74    h85_73    h85_72    h85_71    h85_70    h8
+5_69    h85_68    h85_67    h85_66    h85_65    h85_64    h85_63    h85_62    h85_61 
+   h85_60    h85_59    h85_58    h85_57    h85_56    h85_55    h85_54    h85_53    h8
+5_52    h85_51    h85_50    h85_49    h85_48    h85_47    h85_46    h85_45    h85_44 
+   h85_43    h85_42    h85_41    h85_40    h85_39    h85_38    h85_37    h85_36    h8
+5_35    h85_34    h85_33    h85_32    h85_31    h85_30    h85_29    h85_28    h85_27 
+   h85_26    h85_25    h85_24    h85_23    h85_22    h85_21    h85_20    h85_19    h8
+5_18    h85_17    h85_16    h85_15    h85_14    h85_13    h85_12    h85_11    h85_10 
+   h85_9    h85_8    h85_7    h85_6    h85_5    h85_4    h85_3    h85_2    h85_1    g
+85_0    g85_1    g85_2    g85_3    g85_4    g85_5    g85_6    g85_7    g85_8    g85_9
+    g85_10    g85_11    g85_12    g85_13    g85_14    g85_15    g85_16    g85_17    g
+85_18    g85_19    g85_20    g85_21    g85_22    g85_23    g85_24    g85_25    g85_26
+    g85_27    g85_28    g85_29    g85_30    g85_31    g85_32    g85_33    g85_34    g
+85_35    g85_36    g85_37    g85_38    g85_39    g85_40    g85_41    g85_42    g85_43
+    g85_44    g85_45    g85_46    g85_47    g85_48    g85_49    g85_50    g85_51    g
+85_52    g85_53    g85_54    g85_55    g85_56    g85_57    g85_58    g85_59    g85_60
+    g85_61    g85_62    g85_63    g85_64    g85_65    g85_66    g85_67    g85_68    g
+85_69    g85_70    g85_71    g85_72    g85_73    g85_74    g85_75    g85_76    g85_77
+    g85_78    g85_79    g85_80    g85_81    g85_82    g85_83    g85_84    g85_85    h
+86_86    h86_85    h86_84    h86_83    h86_82    h86_81    h86_80    h86_79    h86_78
+    h86_77    h86_76    h86_75    h86_74    h86_73    h86_72    h86_71    h86_70    h
+86_69    h86_68    h86_67    h86_66    h86_65    h86_64    h86_63    h86_62    h86_61
+    h86_60    h86_59    h86_58    h86_57    h86_56    h86_55    h86_54    h86_53    h
+86_52    h86_51    h86_50    h86_49    h86_48    h86_47    h86_46    h86_45    h86_44
+    h86_43    h86_42    h86_41    h86_40    h86_39    h86_38    h86_37    h86_36    h
+86_35    h86_34    h86_33    h86_32    h86_31    h86_30    h86_29    h86_28    h86_27
+    h86_26    h86_25    h86_24    h86_23    h86_22    h86_21    h86_20    h86_19    h
+86_18    h86_17    h86_16    h86_15    h86_14    h86_13    h86_12    h86_11    h86_10
+    h86_9    h86_8    h86_7    h86_6    h86_5    h86_4    h86_3    h86_2    h86_1    
+g86_0    g86_1    g86_2    g86_3    g86_4    g86_5    g86_6    g86_7    g86_8    g86_
+9    g86_10    g86_11    g86_12    g86_13    g86_14    g86_15    g86_16    g86_17    
+g86_18    g86_19    g86_20    g86_21    g86_22    g86_23    g86_24    g86_25    g86_2
+6    g86_27    g86_28    g86_29    g86_30    g86_31    g86_32    g86_33    g86_34    
+g86_35    g86_36    g86_37    g86_38    g86_39    g86_40    g86_41    g86_42    g86_4
+3    g86_44    g86_45    g86_46    g86_47    g86_48    g86_49    g86_50    g86_51    
+g86_52    g86_53    g86_54    g86_55    g86_56    g86_57    g86_58    g86_59    g86_6
+0    g86_61    g86_62    g86_63    g86_64    g86_65    g86_66    g86_67    g86_68    
+g86_69    g86_70    g86_71    g86_72    g86_73    g86_74    g86_75    g86_76    g86_7
+7    g86_78    g86_79    g86_80    g86_81    g86_82    g86_83    g86_84    g86_85    
+g86_86    h87_87    h87_86    h87_85    h87_84    h87_83    h87_82    h87_81    h87_8
+0    h87_79    h87_78    h87_77    h87_76    h87_75    h87_74    h87_73    h87_72    
+h87_71    h87_70    h87_69    h87_68    h87_67    h87_66    h87_65    h87_64    h87_6
+3    h87_62    h87_61    h87_60    h87_59    h87_58    h87_57    h87_56    h87_55    
+h87_54    h87_53    h87_52    h87_51    h87_50    h87_49    h87_48    h87_47    h87_4
+6    h87_45    h87_44    h87_43    h87_42    h87_41    h87_40    h87_39    h87_38    
+h87_37    h87_36    h87_35    h87_34    h87_33    h87_32    h87_31    h87_30    h87_2
+9    h87_28    h87_27    h87_26    h87_25    h87_24    h87_23    h87_22    h87_21    
+h87_20    h87_19    h87_18    h87_17    h87_16    h87_15    h87_14    h87_13    h87_1
+2    h87_11    h87_10    h87_9    h87_8    h87_7    h87_6    h87_5    h87_4    h87_3 
+   h87_2    h87_1    g87_0    g87_1    g87_2    g87_3    g87_4    g87_5    g87_6    g
+87_7    g87_8    g87_9    g87_10    g87_11    g87_12    g87_13    g87_14    g87_15   
+ g87_16    g87_17    g87_18    g87_19    g87_20    g87_21    g87_22    g87_23    g87_
+24    g87_25    g87_26    g87_27    g87_28    g87_29    g87_30    g87_31    g87_32   
+ g87_33    g87_34    g87_35    g87_36    g87_37    g87_38    g87_39    g87_40    g87_
+41    g87_42    g87_43    g87_44    g87_45    g87_46    g87_47    g87_48    g87_49   
+ g87_50    g87_51    g87_52    g87_53    g87_54    g87_55    g87_56    g87_57    g87_
+58    g87_59    g87_60    g87_61    g87_62    g87_63    g87_64    g87_65    g87_66   
+ g87_67    g87_68    g87_69    g87_70    g87_71    g87_72    g87_73    g87_74    g87_
+75    g87_76    g87_77    g87_78    g87_79    g87_80    g87_81    g87_82    g87_83   
+ g87_84    g87_85    g87_86    g87_87    h88_88    h88_87    h88_86    h88_85    h88_
+84    h88_83    h88_82    h88_81    h88_80    h88_79    h88_78    h88_77    h88_76   
+ h88_75    h88_74    h88_73    h88_72    h88_71    h88_70    h88_69    h88_68    h88_
+67    h88_66    h88_65    h88_64    h88_63    h88_62    h88_61    h88_60    h88_59   
+ h88_58    h88_57    h88_56    h88_55    h88_54    h88_53    h88_52    h88_51    h88_
+50    h88_49    h88_48    h88_47    h88_46    h88_45    h88_44    h88_43    h88_42   
+ h88_41    h88_40    h88_39    h88_38    h88_37    h88_36    h88_35    h88_34    h88_
+33    h88_32    h88_31    h88_30    h88_29    h88_28    h88_27    h88_26    h88_25   
+ h88_24    h88_23    h88_22    h88_21    h88_20    h88_19    h88_18    h88_17    h88_
+16    h88_15    h88_14    h88_13    h88_12    h88_11    h88_10    h88_9    h88_8    h
+88_7    h88_6    h88_5    h88_4    h88_3    h88_2    h88_1    g88_0    g88_1    g88_2
+    g88_3    g88_4    g88_5    g88_6    g88_7    g88_8    g88_9    g88_10    g88_11  
+  g88_12    g88_13    g88_14    g88_15    g88_16    g88_17    g88_18    g88_19    g88
+_20    g88_21    g88_22    g88_23    g88_24    g88_25    g88_26    g88_27    g88_28  
+  g88_29    g88_30    g88_31    g88_32    g88_33    g88_34    g88_35    g88_36    g88
+_37    g88_38    g88_39    g88_40    g88_41    g88_42    g88_43    g88_44    g88_45  
+  g88_46    g88_47    g88_48    g88_49    g88_50    g88_51    g88_52    g88_53    g88
+_54    g88_55    g88_56    g88_57    g88_58    g88_59    g88_60    g88_61    g88_62  
+  g88_63    g88_64    g88_65    g88_66    g88_67    g88_68    g88_69    g88_70    g88
+_71    g88_72    g88_73    g88_74    g88_75    g88_76    g88_77    g88_78    g88_79  
+  g88_80    g88_81    g88_82    g88_83    g88_84    g88_85    g88_86    g88_87    g88
+_88    h89_89    h89_88    h89_87    h89_86    h89_85    h89_84    h89_83    h89_82  
+  h89_81    h89_80    h89_79    h89_78    h89_77    h89_76    h89_75    h89_74    h89
+_73    h89_72    h89_71    h89_70    h89_69    h89_68    h89_67    h89_66    h89_65  
+  h89_64    h89_63    h89_62    h89_61    h89_60    h89_59    h89_58    h89_57    h89
+_56    h89_55    h89_54    h89_53    h89_52    h89_51    h89_50    h89_49    h89_48  
+  h89_47    h89_46    h89_45    h89_44    h89_43    h89_42    h89_41    h89_40    h89
+_39    h89_38    h89_37    h89_36    h89_35    h89_34    h89_33    h89_32    h89_31  
+  h89_30    h89_29    h89_28    h89_27    h89_26    h89_25    h89_24    h89_23    h89
+_22    h89_21    h89_20    h89_19    h89_18    h89_17    h89_16    h89_15    h89_14  
+  h89_13    h89_12    h89_11    h89_10    h89_9    h89_8    h89_7    h89_6    h89_5  
+  h89_4    h89_3    h89_2    h89_1    g89_0    g89_1    g89_2    g89_3    g89_4    g8
+9_5    g89_6    g89_7    g89_8    g89_9    g89_10    g89_11    g89_12    g89_13    g8
+9_14    g89_15    g89_16    g89_17    g89_18    g89_19    g89_20    g89_21    g89_22 
+   g89_23    g89_24    g89_25    g89_26    g89_27    g89_28    g89_29    g89_30    g8
+9_31    g89_32    g89_33    g89_34    g89_35    g89_36    g89_37    g89_38    g89_39 
+   g89_40    g89_41    g89_42    g89_43    g89_44    g89_45    g89_46    g89_47    g8
+9_48    g89_49    g89_50    g89_51    g89_52    g89_53    g89_54    g89_55    g89_56 
+   g89_57    g89_58    g89_59    g89_60    g89_61    g89_62    g89_63    g89_64    g8
+9_65    g89_66    g89_67    g89_68    g89_69    g89_70    g89_71    g89_72    g89_73 
+   g89_74    g89_75    g89_76    g89_77    g89_78    g89_79    g89_80    g89_81    g8
+9_82    g89_83    g89_84    g89_85    g89_86    g89_87    g89_88    g89_89    h90_90 
+   h90_89    h90_88    h90_87    h90_86    h90_85    h90_84    h90_83    h90_82    h9
+0_81    h90_80    h90_79    h90_78    h90_77    h90_76    h90_75    h90_74    h90_73 
+   h90_72    h90_71    h90_70    h90_69    h90_68    h90_67    h90_66    h90_65    h9
+0_64    h90_63    h90_62    h90_61    h90_60    h90_59    h90_58    h90_57    h90_56 
+   h90_55    h90_54    h90_53    h90_52    h90_51    h90_50    h90_49    h90_48    h9
+0_47    h90_46    h90_45    h90_44    h90_43    h90_42    h90_41    h90_40    h90_39 
+   h90_38    h90_37    h90_36    h90_35    h90_34    h90_33    h90_32    h90_31    h9
+0_30    h90_29    h90_28    h90_27    h90_26    h90_25    h90_24    h90_23    h90_22 
+   h90_21    h90_20    h90_19    h90_18    h90_17    h90_16    h90_15    h90_14    h9
+0_13    h90_12    h90_11    h90_10    h90_9    h90_8    h90_7    h90_6    h90_5    h9
+0_4    h90_3    h90_2    h90_1    g90_0    g90_1    g90_2    g90_3    g90_4    g90_5 
+   g90_6    g90_7    g90_8    g90_9    g90_10    g90_11    g90_12    g90_13    g90_14
+    g90_15    g90_16    g90_17    g90_18    g90_19    g90_20    g90_21    g90_22    g
+90_23    g90_24    g90_25    g90_26    g90_27    g90_28    g90_29    g90_30    g90_31
+    g90_32    g90_33    g90_34    g90_35    g90_36    g90_37    g90_38    g90_39    g
+90_40    g90_41    g90_42    g90_43    g90_44    g90_45    g90_46    g90_47    g90_48
+    g90_49    g90_50    g90_51    g90_52    g90_53    g90_54    g90_55    g90_56    g
+90_57    g90_58    g90_59    g90_60    g90_61    g90_62    g90_63    g90_64    g90_65
+    g90_66    g90_67    g90_68    g90_69    g90_70    g90_71    g90_72    g90_73    g
+90_74    g90_75    g90_76    g90_77    g90_78    g90_79    g90_80    g90_81    g90_82
+    g90_83    g90_84    g90_85    g90_86    g90_87    g90_88    g90_89    g90_90    h
+91_91    h91_90    h91_89    h91_88    h91_87    h91_86    h91_85    h91_84    h91_83
+    h91_82    h91_81    h91_80    h91_79    h91_78    h91_77    h91_76    h91_75    h
+91_74    h91_73    h91_72    h91_71    h91_70    h91_69    h91_68    h91_67    h91_66
+    h91_65    h91_64    h91_63    h91_62    h91_61    h91_60    h91_59    h91_58    h
+91_57    h91_56    h91_55    h91_54    h91_53    h91_52    h91_51    h91_50    h91_49
+    h91_48    h91_47    h91_46    h91_45    h91_44    h91_43    h91_42    h91_41    h
+91_40    h91_39    h91_38    h91_37    h91_36    h91_35    h91_34    h91_33    h91_32
+    h91_31    h91_30    h91_29    h91_28    h91_27    h91_26    h91_25    h91_24    h
+91_23    h91_22    h91_21    h91_20    h91_19    h91_18    h91_17    h91_16    h91_15
+    h91_14    h91_13    h91_12    h91_11    h91_10    h91_9    h91_8    h91_7    h91_
+6    h91_5    h91_4    h91_3    h91_2    h91_1    g91_0    g91_1    g91_2    g91_3   
+ g91_4    g91_5    g91_6    g91_7    g91_8    g91_9    g91_10    g91_11    g91_12    
+g91_13    g91_14    g91_15    g91_16    g91_17    g91_18    g91_19    g91_20    g91_2
+1    g91_22    g91_23    g91_24    g91_25    g91_26    g91_27    g91_28    g91_29    
+g91_30    g91_31    g91_32    g91_33    g91_34    g91_35    g91_36    g91_37    g91_3
+8    g91_39    g91_40    g91_41    g91_42    g91_43    g91_44    g91_45    g91_46    
+g91_47    g91_48    g91_49    g91_50    g91_51    g91_52    g91_53    g91_54    g91_5
+5    g91_56    g91_57    g91_58    g91_59    g91_60    g91_61    g91_62    g91_63    
+g91_64    g91_65    g91_66    g91_67    g91_68    g91_69    g91_70    g91_71    g91_7
+2    g91_73    g91_74    g91_75    g91_76    g91_77    g91_78    g91_79    g91_80    
+g91_81    g91_82    g91_83    g91_84    g91_85    g91_86    g91_87    g91_88    g91_8
+9    g91_90    g91_91    h92_92    h92_91    h92_90    h92_89    h92_88    h92_87    
+h92_86    h92_85    h92_84    h92_83    h92_82    h92_81    h92_80    h92_79    h92_7
+8    h92_77    h92_76    h92_75    h92_74    h92_73    h92_72    h92_71    h92_70    
+h92_69    h92_68    h92_67    h92_66    h92_65    h92_64    h92_63    h92_62    h92_6
+1    h92_60    h92_59    h92_58    h92_57    h92_56    h92_55    h92_54    h92_53    
+h92_52    h92_51    h92_50    h92_49    h92_48    h92_47    h92_46    h92_45    h92_4
+4    h92_43    h92_42    h92_41    h92_40    h92_39    h92_38    h92_37    h92_36    
+h92_35    h92_34    h92_33    h92_32    h92_31    h92_30    h92_29    h92_28    h92_2
+7    h92_26    h92_25    h92_24    h92_23    h92_22    h92_21    h92_20    h92_19    
+h92_18    h92_17    h92_16    h92_15    h92_14    h92_13    h92_12    h92_11    h92_1
+0    h92_9    h92_8    h92_7    h92_6    h92_5    h92_4    h92_3    h92_2    h92_1   
+ g92_0    g92_1    g92_2    g92_3    g92_4    g92_5    g92_6    g92_7    g92_8    g92
+_9    g92_10    g92_11    g92_12    g92_13    g92_14    g92_15    g92_16    g92_17   
+ g92_18    g92_19    g92_20    g92_21    g92_22    g92_23    g92_24    g92_25    g92_
+26    g92_27    g92_28    g92_29    g92_30    g92_31    g92_32    g92_33    g92_34   
+ g92_35    g92_36    g92_37    g92_38    g92_39    g92_40    g92_41    g92_42    g92_
+43    g92_44    g92_45    g92_46    g92_47    g92_48    g92_49    g92_50    g92_51   
+ g92_52    g92_53    g92_54    g92_55    g92_56    g92_57    g92_58    g92_59    g92_
+60    g92_61    g92_62    g92_63    g92_64    g92_65    g92_66    g92_67    g92_68   
+ g92_69    g92_70    g92_71    g92_72    g92_73    g92_74    g92_75    g92_76    g92_
+77    g92_78    g92_79    g92_80    g92_81    g92_82    g92_83    g92_84    g92_85   
+ g92_86    g92_87    g92_88    g92_89    g92_90    g92_91    g92_92    h93_93    h93_
+92    h93_91    h93_90    h93_89    h93_88    h93_87    h93_86    h93_85    h93_84   
+ h93_83    h93_82    h93_81    h93_80    h93_79    h93_78    h93_77    h93_76    h93_
+75    h93_74    h93_73    h93_72    h93_71    h93_70    h93_69    h93_68    h93_67   
+ h93_66    h93_65    h93_64    h93_63    h93_62    h93_61    h93_60    h93_59    h93_
+58    h93_57    h93_56    h93_55    h93_54    h93_53    h93_52    h93_51    h93_50   
+ h93_49    h93_48    h93_47    h93_46    h93_45    h93_44    h93_43    h93_42    h93_
+41    h93_40    h93_39    h93_38    h93_37    h93_36    h93_35    h93_34    h93_33   
+ h93_32    h93_31    h93_30    h93_29    h93_28    h93_27    h93_26    h93_25    h93_
+24    h93_23    h93_22    h93_21    h93_20    h93_19    h93_18    h93_17    h93_16   
+ h93_15    h93_14    h93_13    h93_12    h93_11    h93_10    h93_9    h93_8    h93_7 
+   h93_6    h93_5    h93_4    h93_3    h93_2    h93_1    g93_0    g93_1    g93_2    g
+93_3    g93_4    g93_5    g93_6    g93_7    g93_8    g93_9    g93_10    g93_11    g93
+_12    g93_13    g93_14    g93_15    g93_16    g93_17    g93_18    g93_19    g93_20  
+  g93_21    g93_22    g93_23    g93_24    g93_25    g93_26    g93_27    g93_28    g93
+_29    g93_30    g93_31    g93_32    g93_33    g93_34    g93_35    g93_36    g93_37  
+  g93_38    g93_39    g93_40    g93_41    g93_42    g93_43    g93_44    g93_45    g93
+_46    g93_47    g93_48    g93_49    g93_50    g93_51    g93_52    g93_53    g93_54  
+  g93_55    g93_56    g93_57    g93_58    g93_59    g93_60    g93_61    g93_62    g93
+_63    g93_64    g93_65    g93_66    g93_67    g93_68    g93_69    g93_70    g93_71  
+  g93_72    g93_73    g93_74    g93_75    g93_76    g93_77    g93_78    g93_79    g93
+_80    g93_81    g93_82    g93_83    g93_84    g93_85    g93_86    g93_87    g93_88  
+  g93_89    g93_90    g93_91    g93_92    g93_93    h94_94    h94_93    h94_92    h94
+_91    h94_90    h94_89    h94_88    h94_87    h94_86    h94_85    h94_84    h94_83  
+  h94_82    h94_81    h94_80    h94_79    h94_78    h94_77    h94_76    h94_75    h94
+_74    h94_73    h94_72    h94_71    h94_70    h94_69    h94_68    h94_67    h94_66  
+  h94_65    h94_64    h94_63    h94_62    h94_61    h94_60    h94_59    h94_58    h94
+_57    h94_56    h94_55    h94_54    h94_53    h94_52    h94_51    h94_50    h94_49  
+  h94_48    h94_47    h94_46    h94_45    h94_44    h94_43    h94_42    h94_41    h94
+_40    h94_39    h94_38    h94_37    h94_36    h94_35    h94_34    h94_33    h94_32  
+  h94_31    h94_30    h94_29    h94_28    h94_27    h94_26    h94_25    h94_24    h94
+_23    h94_22    h94_21    h94_20    h94_19    h94_18    h94_17    h94_16    h94_15  
+  h94_14    h94_13    h94_12    h94_11    h94_10    h94_9    h94_8    h94_7    h94_6 
+   h94_5    h94_4    h94_3    h94_2    h94_1    g94_0    g94_1    g94_2    g94_3    g
+94_4    g94_5    g94_6    g94_7    g94_8    g94_9    g94_10    g94_11    g94_12    g9
+4_13    g94_14    g94_15    g94_16    g94_17    g94_18    g94_19    g94_20    g94_21 
+   g94_22    g94_23    g94_24    g94_25    g94_26    g94_27    g94_28    g94_29    g9
+4_30    g94_31    g94_32    g94_33    g94_34    g94_35    g94_36    g94_37    g94_38 
+   g94_39    g94_40    g94_41    g94_42    g94_43    g94_44    g94_45    g94_46    g9
+4_47    g94_48    g94_49    g94_50    g94_51    g94_52    g94_53    g94_54    g94_55 
+   g94_56    g94_57    g94_58    g94_59    g94_60    g94_61    g94_62    g94_63    g9
+4_64    g94_65    g94_66    g94_67    g94_68    g94_69    g94_70    g94_71    g94_72 
+   g94_73    g94_74    g94_75    g94_76    g94_77    g94_78    g94_79    g94_80    g9
+4_81    g94_82    g94_83    g94_84    g94_85    g94_86    g94_87    g94_88    g94_89 
+   g94_90    g94_91    g94_92    g94_93    g94_94    h95_95    h95_94    h95_93    h9
+5_92    h95_91    h95_90    h95_89    h95_88    h95_87    h95_86    h95_85    h95_84 
+   h95_83    h95_82    h95_81    h95_80    h95_79    h95_78    h95_77    h95_76    h9
+5_75    h95_74    h95_73    h95_72    h95_71    h95_70    h95_69    h95_68    h95_67 
+   h95_66    h95_65    h95_64    h95_63    h95_62    h95_61    h95_60    h95_59    h9
+5_58    h95_57    h95_56    h95_55    h95_54    h95_53    h95_52    h95_51    h95_50 
+   h95_49    h95_48    h95_47    h95_46    h95_45    h95_44    h95_43    h95_42    h9
+5_41    h95_40    h95_39    h95_38    h95_37    h95_36    h95_35    h95_34    h95_33 
+   h95_32    h95_31    h95_30    h95_29    h95_28    h95_27    h95_26    h95_25    h9
+5_24    h95_23    h95_22    h95_21    h95_20    h95_19    h95_18    h95_17    h95_16 
+   h95_15    h95_14    h95_13    h95_12    h95_11    h95_10    h95_9    h95_8    h95_
+7    h95_6    h95_5    h95_4    h95_3    h95_2    h95_1    g95_0    g95_1    g95_2   
+ g95_3    g95_4    g95_5    g95_6    g95_7    g95_8    g95_9    g95_10    g95_11    g
+95_12    g95_13    g95_14    g95_15    g95_16    g95_17    g95_18    g95_19    g95_20
+    g95_21    g95_22    g95_23    g95_24    g95_25    g95_26    g95_27    g95_28    g
+95_29    g95_30    g95_31    g95_32    g95_33    g95_34    g95_35    g95_36    g95_37
+    g95_38    g95_39    g95_40    g95_41    g95_42    g95_43    g95_44    g95_45    g
+95_46    g95_47    g95_48    g95_49    g95_50    g95_51    g95_52    g95_53    g95_54
+    g95_55    g95_56    g95_57    g95_58    g95_59    g95_60    g95_61    g95_62    g
+95_63    g95_64    g95_65    g95_66    g95_67    g95_68    g95_69    g95_70    g95_71
+    g95_72    g95_73    g95_74    g95_75    g95_76    g95_77    g95_78    g95_79    g
+95_80    g95_81    g95_82    g95_83    g95_84    g95_85    g95_86    g95_87    g95_88
+    g95_89    g95_90    g95_91    g95_92    g95_93    g95_94    g95_95    
+         2500100  1.25004999999778E+000  0.00000000000000E+000 -8.09239620661503E-005
+  2.06111107443685E-002 -6.54781843303721E-005  2.04174774081854E-004 -3.397276573986
+57E-005 -6.44439496825380E-005 -3.61837924663890E-004  1.66805924369296E-004  2.54064
+725236714E-005  7.11798981368071E-005 -6.08647591076202E-005 -5.37668749260724E-004 -
+1.78193366179798E-005  1.04238718578852E-004  6.71554927228962E-005 -4.47181790727860
+E-006  8.20637444246284E-005  2.28722803137307E-005  8.88972735912107E-005  5.3730086
+6571657E-005 -1.25378853903728E-005 -2.69592167571589E-005  2.08598450466352E-004  2.
+70090925441222E-006 -1.20567504269209E-005  2.13407342105457E-005  1.28266154441917E-
+005  1.34309377825287E-005  1.41356283556477E-005  6.34916282889050E-005  9.167545349
+75832E-006 -1.93364194213550E-005 -1.52656658779805E-005  2.82208070742723E-006  6.52
+857243848592E-006 -5.35266137636625E-007 -1.92808786876875E-005 -2.13860843036096E-00
+6  1.47315497093821E-005 -2.85148374773036E-006 -2.62464211847231E-006 -6.91697891066
+974E-006 -1.86016389603577E-005  3.90961930155090E-006  2.49557009306738E-008 -4.6160
+4422109550E-006 -1.02529834901900E-006  2.20999260620921E-006 -2.31773848814176E-006 
+ 7.59773366038334E-006  2.96376641043064E-006 -3.85370263087292E-006  2.4746663617003
+8E-007 -1.09449145598688E-006  1.08090929827496E-006 -7.21296951015436E-006  1.571517
+71384645E-006 -1.85235230241802E-006  8.58376534076216E-007  3.86904714785721E-006  1
+.72264212059927E-006  1.70356361379861E-006  3.51572546263299E-007 -5.99677400234188E
+-007  3.31551222837057E-006  1.82400683644319E-007  6.11394025883249E-006 -1.50299266
+385713E-007 -3.95688612995512E-006  4.49887392781065E-007 -1.24936511048137E-006  4.2
+9344326188228E-008  2.17541264051668E-006  1.60238081770633E-007 -4.89108028146080E-0
+06 -9.95200595653344E-007  4.22871509675761E-006 -4.02137235130588E-007 -1.0497294129
+5651E-006  4.07780279690596E-007 -6.47492332952643E-007 -2.38376088939314E-007 -2.140
+99322532892E-007 -2.95233611149289E-006  4.90475911144013E-007 -4.26255594253532E-007
+  1.60073717802252E-007  9.25931591336214E-007  3.44735214838679E-007 -2.498524838775
+24E-006  1.02215152212084E-007  1.17803913282993E-006  5.26237945590409E-007 -1.66134
+397474438E-006 -5.44389118312349E-007  3.03480399193075E-006  3.79211229395139E-007  
+[lfairchild@baribu project]$ packet_write_wait: Connection to 169.229.207.182: Broken pipe
+
+lukefairchild765@Lukes-MacBook-Pro : ~
+$ 

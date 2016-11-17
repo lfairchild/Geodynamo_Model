@@ -1,0 +1,121 @@
+
+
+Introduction to the Baribu Cluster
+==================================
+  Created by Doug Neuhauser
+  Updated by Stephen Thompson
+  Updated: 2015/07/15
+
+====
+1.  The headnode that you login to is named baribu.geo.berkeley.edu ("baribu" for short).  There is an email list "baribu-cluster@seismo.berkeley.edu" that you can use to communicate with other users.  If you have administrative questions or concerns, please send email to:  adm@seismo.berkeley.edu
+
+====
+2.  Technical info:
+        37 nodes:
+                (2) quad-core 3.16 GHz Intel XEON processors.
+                32 GB of memory (~ 4 GB/core).
+                ~130 GB of tmp disk space per node.
+                Infiniband for MPI.
+                Gigabit ethernet for NFS remote file access.
+        Operating system:
+                Linux Centos (built from Redhat sources)
+                64-bit OS.
+        This means that there are a total of 37*8 = 296 processing cores.
+====
+3.  DO NOT REPLACE YOUR .bashrc or .cshrc files on baribu with ones from other systems.  You may ADD to them, but preserve their mode of operation.
+
+====
+4.  All user disk space is allocated on an NFS-mounted RAID ARRAY that is housed on a separate I/O node.  The NFS filesystem(s) are available on the headnode and all compute nodes, under /home/$USER.  Because of the large size of the home filesystem, there is not a traditional tape backup mechanism in place for the baribu cluster.  Instead, on a nightly basis the HOME volume is synced to the BACKUP volume, INCLUDING DELETES!!!  This provides some measure of data protection, but please recognize its limitations and use caution.  Files can be retreived from backup by copying from /backup/$USER to /home/$USER on the baribu headnode.
+
+====
+5.  The OS is a 64-bit OS, and by default, the compilers will create 64-bit executables.  If you want 32-bit executables, you have to provide the appropriate compiler options.  The table below shows the size (in bits) of C datatypes in 32-bit and 64-bit mode.  NOTE THE DIFFERNECE IN THE SIZE OF POINTERS.
+
+Data type       32-bit  64-bit
+-------------------------------
+char            8       8
+short int       16      16
+int             32      32
+long int        32      64
+long long int   64      64
+ALL pointers    34      64
+
+====
+6.  Baribu uses Infiniband as the message passing interconnect (MPI) between nodes as well as for NFS file access, leaving traditinal Ethernet for job and other types of administration.
+
+====
+7.  There are multiple compilers and multiple MPI libraries on the system.  In general, you want to use one combination (compiler and MPI library pair) for your jobs.  We recommend using the Intel compilers with OpenMPI.
+    To specify which compiler and MPI library to use, use the command
+
+        module load MODULEFILE [MODULEFILE ...]
+
+preferably from within your .bashrc or .cshrc file.  NOTE:  AFTER CHANGING YOUR .bashrc OR .cshrc FILE, LOGOUT AND LOGIN AGAIN TO THE HEAD NODE, SINCE YOUR PATH IS CONFIGURED ONLY AT LOGIN.
+    To display a list of available modules, use the command "module avail".  Modules can be loaded, unloaded, and reordered on the fly, but keep in mind that the best way for these settings to "follow" your jobs is to load them in your .bashrc or .cshrc files with a line like (note the pair of compiler and MPI library):
+
+         module load intel/intel-10.1.022 openmpi/intel-10.1.022
+
+    These modules are used to set your executable PATH variable and your LD_LIBRARY_PATH variable appropriately so that you use the proper version of the compiler commands:
+        mpicc
+        mpic++
+        mpif77
+        mpif90
+and to link and run your applications with the appropriate libraries.
+
+====
+8.  We have configured baribu to use the SLURM queuing and resource management
+system, with the following partitions:
+  GCL - For use by all members of the Geophysics Computing Lab
+
+====
+9.  A typical SLURM batch script file is shown below.  Note that STDOUT and
+STDERR are written to a file name slurm-<jobid>.out in your SUBMISSION
+directory (NOT in your home directory).
+
+---------------------------------------
+#!/bin/bash
+#
+# name of this script: program-batch.sh
+#
+# Job name:
+#SBATCH --job-name=<JOB>
+#
+# Partition:
+#SBATCH --partition=<PARTITION>
+#
+# Processors:
+#SBATCH --ntasks=<CORES>
+#
+# Mail type:
+#SBATCH --mail-type=all
+#
+# Mail user:
+#SBATCH --mail-user=<EMAIL_ADDRESS>
+#
+cmd="mpirun /home/<USERNAME>/<PROGRAM>"
+echo $cmd
+$cmd
+--------------------------------------
+
+The important things to note are the place-holders which need to be replaced
+with actual content:
+<JOB> name of job
+<PARTITION> name of partition to use
+<CORES> number of cores to use
+<EMAIL_ADDRESS> email address to receive job notifications
+<USERNAME> username for referenced home directory
+<PROGRAM> name of binary file to run
+
+To submit the above job:
+  sbatch /home/<USERNAME>/program-batch.sh
+
+To check status of queue:
+  squeue
+
+To check status of partitions (and node availability):
+  sinfo
+
+
+
+
+
+
+
