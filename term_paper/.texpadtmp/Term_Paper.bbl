@@ -1,0 +1,44 @@
+\begin{thebibliography}{6}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\providecommand{\urlprefix}{URL }
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi:\discretionary{}{}{}#1}\else
+  \providecommand{\doi}{doi:\discretionary{}{}{}\begingroup
+  \urlstyle{rm}\Url}\fi
+
+\bibitem[{Aubert et~al.(2009)Aubert, Labrosse, and Poitou}]{Aubert2009a}
+Aubert, J., Labrosse, S., and Poitou, C., 2009, Modelling the palaeo-evolution
+  of the geodynamo: Geophysical Journal International, pp. doi:
+  10.1111/j.1365--246X.2009.04,361.x.
+
+\bibitem[{Biggin et~al.(2015)Biggin, Piispa, Pesonen, Holme, Paterson,
+  Veikkolainen, and Tauxe}]{Biggin2015a}
+Biggin, A.~J., Piispa, E.~J., Pesonen, L.~J., Holme, R., Paterson, G.~A.,
+  Veikkolainen, T., and Tauxe, L., 2015, Palaeomagnetic field intensity
+  variations suggest mesoproterozoic inner-core nucleation: Nature, vol. 526,
+  pp. 245--248.
+
+\bibitem[{Buffett et~al.(1996)Buffett, Huppert, Lister, and
+  Woods}]{Buffett1996a}
+Buffett, B.~A., Huppert, H.~E., Lister, J.~R., and Woods, A.~W., 1996, {On the
+  thermal evolution of the Earth's core}: Journal of Geophysical Research:
+  Solid Earth, vol. 101, pp. 7989--8006, \doi{10.1029/95JB03539}.
+
+\bibitem[{Driscoll(2016)}]{Driscoll2016b}
+Driscoll, P.~E., 2016, {Simulating 2 Ga of geodynamo history}: Geophysical
+  Research Letters, pp. n/a--n/a, \doi{10.1002/2016GL068858}.
+
+\bibitem[{Matsui et~al.(2014)Matsui, King, and Buffett}]{Matsui2014a}
+Matsui, H., King, E., and Buffett, B., 2014, Multiscale convection in a
+  geodynamo simulation with uniform heat flux along the outer boundary:
+  Geochemistry, Geophysics, Geosystems, vol.~15, pp. 3212--3225,
+  \doi{10.1002/2014GC005432}.
+
+\bibitem[{Tarduno et~al.(2007)Tarduno, Cottrell, Watkeys, and
+  Bauch}]{Tarduno2007a}
+Tarduno, J.~A., Cottrell, R.~D., Watkeys, M.~K., and Bauch, D., 2007,
+  Geomagnetic field strength 3.2 billion years ago recorded by single silicate
+  crystals: Nature, vol. 446, pp. 657--660.
+
+\end{thebibliography}

@@ -4,8 +4,8 @@ function [radius,Tavg, Tc, q, qtotal, qavg] = AverageTemperature2(source)
 %
 %
  load picked_mode.dat
- 
- 
+
+
 % retrieve radial levels
 nr = 97;
 ilevel = picked_mode(:,3);
@@ -64,10 +64,3 @@ c2 = qb2 - c1/radius(nr);
 Tc = c1./radius + c2 - (source/6).*r2;
 
 end
-
-    
-
-
-
- 
- 

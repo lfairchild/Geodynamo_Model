@@ -1,0 +1,46 @@
+This is BibTeX, Version 0.99d (TeX Live 2015)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: Term_Paper.aux
+The style file: ../gsabull.bst
+Database file #1: ../../../references/allrefs.bib
+You've used 6 entries,
+            2887 wiz_defined-function locations,
+            648 strings with 6095 characters,
+and the built_in function-call counts, 10076 in all, are:
+= -- 1350
+> -- 198
+< -- 11
++ -- 122
+- -- 66
+* -- 459
+:= -- 873
+add.period$ -- 6
+call.type$ -- 6
+change.case$ -- 52
+chr.to.int$ -- 6
+cite$ -- 6
+duplicate$ -- 1103
+empty$ -- 460
+format.name$ -- 82
+if$ -- 2090
+int.to.chr$ -- 1
+int.to.str$ -- 1
+missing$ -- 62
+newline$ -- 27
+num.names$ -- 24
+pop$ -- 303
+preamble$ -- 1
+purify$ -- 46
+quote$ -- 0
+skip$ -- 845
+stack$ -- 0
+substring$ -- 640
+swap$ -- 1054
+text.length$ -- 10
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 54
+warning$ -- 0
+while$ -- 41
+width$ -- 0
+write$ -- 77
